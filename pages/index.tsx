@@ -27,8 +27,8 @@ export default function Home() {
             </p>
 
             <div className="mt-10 flex flex-row space-x-5">
-              <Social href={""} icon={FaGithub} />
-              <Social href={""} icon={FaTwitter} />
+              <Social href="/github" icon={FaGithub} />
+              <Social href="/twitter" icon={FaTwitter} />
             </div>
           </div>
         </div>
