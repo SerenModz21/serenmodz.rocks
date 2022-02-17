@@ -2,22 +2,18 @@
 import NextLink from "next/link";
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import type { IconType } from "react-icons";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
-    <div>
-      {/* navbar */}
-      <div className="h-[5vh] w-full bg-gray-200">
-        {/* TODO: add navbar  */}
-      </div>
-
-      {/* content */}
+    <>
+      <NextSeo title="Home" />
       <div className="flex h-[90vh] w-full flex-wrap justify-center bg-gray-200">
         <div className="my-auto items-center justify-center space-y-5 p-5 lg:inline-flex lg:space-x-10 lg:space-y-0">
           <img
             src="/logo.png"
             className="h-[350px] animate-float rounded-full"
-            alt="Seren_Modz 21 Logo"
+            alt="Seren_Modz 21"
           />
 
           <div>
@@ -33,10 +29,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* footer */}
-      <div className="h-[5vh] w-full bg-gray-200">{/* TODO: add footer */}</div>
-    </div>
+    </>
   );
 }
 
