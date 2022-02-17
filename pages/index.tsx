@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <NextSeo title="Home" />
-      <div className="flex h-[90vh] w-full justify-center">
+      <div className="flex h-[90vh] w-full justify-center ">
         <div className="my-auto items-center justify-center space-y-5 p-5 lg:inline-flex lg:space-x-10 lg:space-y-0">
           <NextImage
             src="/logo.png"
@@ -23,7 +23,7 @@ export default function Home() {
               Welcome to my website! My name is Seren_Modz 21.
             </p>
 
-            <div className="mt-10 space-x-5">
+            <div className="mt-10 items-center space-x-5">
               <Social href="/github" name="GitHub" icon={FaGithub} />
               <Social href="/twitter" name="Twitter" icon={FaTwitter} />
             </div>
@@ -38,6 +38,7 @@ const Social = (props: { href: string; icon: IconType; name: string }) => (
   <a href={props.href} target="_blank" rel="noopener noreferrer">
     <button
       aria-label={props.name}
+      title={props.name}
       className="transition ease-in-out hover:scale-110"
     >
       <props.icon className="h-10 w-10" />
