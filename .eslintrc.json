@@ -1,3 +1,7 @@
 {
-  "extends": ["next/core-web-vitals", "prettier"]
+  "extends": ["next/core-web-vitals", "prettier"],
+  "rules": {
+    // TODO: see how i can properly use next-image with tailwind
+    "@next/next/no-img-element": "off"
+  }
 }
