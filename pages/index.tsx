@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <NextSeo title="Home" />
-      <div className="flex h-[90vh] w-full justify-center ">
+      <div className="flex min-h-[90vh] w-full justify-center ">
         <div className="my-auto items-center justify-center space-y-5 p-5 lg:inline-flex lg:space-x-10 lg:space-y-0">
           <NextImage
             src="/logo.png"
