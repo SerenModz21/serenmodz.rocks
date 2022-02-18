@@ -2,7 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Credits
 
-- [Mario Designs](https://codepen.io/MarioDesigns/pen/woJgeo) for the floating image effect
+- [Lee Robinson](https://github.com/leerob/leerob.io) has amazing code snippets on his website (now playing, top tracks and fetcher)
+- [Anthony Collier](https://github.com/acollierr17/acollier.dev) for the customized versions of Lee's code snippets (now playing and fetcher)
 
 ## Getting Started
 
