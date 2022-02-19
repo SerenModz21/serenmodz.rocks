@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <NextSeo title="Home" />
-      <div className="flex min-h-[90vh] w-full justify-center ">
+      <div className="flex min-h-fit w-full justify-center sm:min-h-[90vh]">
         <div className="my-auto items-center justify-center space-y-5 p-5 lg:inline-flex lg:space-x-10 lg:space-y-0">
           <NextImage
             src="/logo.png"
@@ -23,7 +23,7 @@ export default function Home() {
               Welcome to my website! My name is Seren_Modz 21.
             </p>
 
-            <div className="mt-10 items-center space-x-5">
+            <div className="mt-4 items-center space-x-5 sm:mt-10">
               <Social href="/github" name="GitHub" icon={FaGithub} />
               <Social href="/twitter" name="Twitter" icon={FaTwitter} />
             </div>
