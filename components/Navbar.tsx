@@ -7,6 +7,8 @@ export default function Navbar() {
   const { resolvedTheme, setTheme } = useTheme();
   const text = mounted && (resolvedTheme === "dark" ? "Light" : "Dark");
 
+  // we only get access to theme after being mounted (credits to Lee Robinson for this)
+  // https://github.com/leerob/leerob.io/blob/main/components/Container.tsx#L35
   useEffect(() => setMounted(true), []);
 
   return (
