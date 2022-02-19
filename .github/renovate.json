@@ -8,6 +8,11 @@
     "rangeStrategy": "bump",
     "packageRules": [
       {
+        "matchUpdateTypes": ["minor", "patch"],
+        "matchCurrentVersion": "!/^0/",
+        "automerge": true
+      },
+      {
         "matchPackagePatterns": ["next", "@next"],
         "groupName": "Next.js Dependencies"
       }
