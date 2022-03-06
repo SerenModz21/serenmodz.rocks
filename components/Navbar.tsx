@@ -1,6 +1,7 @@
 import { useTheme } from "next-themes";
 import { FaMoon, FaQuestion, FaSun } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import NextLink from "next/link";
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false);
@@ -15,7 +16,7 @@ export default function Navbar() {
     <div className="h-20 w-full">
       <div className="inline-flex h-full w-full items-center justify-between p-4">
         <nav className="">
-          <a href="/">Home</a>
+          <NextLink href="/">Home</NextLink>
         </nav>
         <button
           type="button"

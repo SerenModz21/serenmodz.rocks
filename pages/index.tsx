@@ -43,9 +43,9 @@ export default function Home() {
           {/*</p>*/}
 
           <p className="px-8">
-            Hello, my name is Seren_Modz 21. I'm a full-time college student
-            from the United Kingdom. I'm also a young tech-savvy guy who likes
-            to be around technology; more specifically, programming.
+            Hello, my name is Seren_Modz 21. I&#39;m a full-time college student
+            from the United Kingdom. I&#39;m also a young tech-savvy guy who
+            likes to be around technology; more specifically, programming.
           </p>
 
           <p className="px-8">
