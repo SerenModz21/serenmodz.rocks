@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
     <ThemeProvider attribute="class">
       <DefaultSeo {...nextSeo(router)} />
       <div className="min-h-screen w-full">
-        <div className="mx-auto flex min-h-screen max-w-2xl flex-col justify-between rounded-2xl px-4 shadow-2xl dark:shadow-none">
+        <div className="mx-auto flex min-h-screen max-w-2xl flex-col justify-between rounded-2xl">
           <Navbar />
           <Component {...pageProps} />
           <Footer />
