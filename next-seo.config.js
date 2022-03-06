@@ -1,5 +1,5 @@
 const url = process.env.NEXT_PUBLIC_VERCEL_URL
-  ? "https://serenmodz.rocks"
+  ? "https://www.serenmodz.rocks"
   : "http://localhost:3000";
 
 /**
