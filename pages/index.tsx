@@ -1,47 +1,111 @@
 import NextImage from "next/image";
-import { FaGithub, FaTwitter } from "react-icons/fa";
-import type { IconType } from "react-icons";
 import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
-    <>
+    <div className="min-h-80 h-fit w-full p-4">
       <NextSeo title="Home" />
-      <div className="flex min-h-fit w-full justify-center sm:min-h-[90vh]">
-        <div className="my-auto items-center justify-center space-y-5 p-5 lg:inline-flex lg:space-x-10 lg:space-y-0">
-          <NextImage
-            src="/logo.png"
-            alt="Seren_Modz 21"
-            height={300}
-            width={300}
-            className="rounded-full"
-          />
 
+      <main className="mx-auto inline-flex flex-col justify-center space-y-8">
+        {/* logo n small intro */}
+        <div className="inline-flex items-center space-x-6 px-8">
+          {/* logo */}
+          <div className="relative h-40 w-40">
+            <NextImage
+              src="/logo.png"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-full"
+              alt="Seren_Modz 21"
+            />
+          </div>
+          {/* text */}
           <div>
             <h1 className="text-5xl">Seren_Modz 21</h1>
-            <p className="mt-1 text-3xl">
-              Welcome to my website! My name is Seren_Modz 21.
-            </p>
-
-            <div className="mt-4 items-center space-x-5 sm:mt-10">
-              <Social href="/github" name="GitHub" icon={FaGithub} />
-              <Social href="/twitter" name="Twitter" icon={FaTwitter} />
-            </div>
+            <p className="mt-1 text-xl">Welcome to my personal website.</p>
           </div>
         </div>
-      </div>
-    </>
+
+        {/* more content */}
+        <div className="inline-flex flex-col items-center justify-center space-y-6">
+          {/*<p className="px-8">*/}
+          {/*  My name is Seren_Modz 21 and I'm a self-taught programmer. My*/}
+          {/*  journey started in high-school. I was born in the United Kingdom*/}
+          {/*  and have been there all my life. I am proficient in JavaScript*/}
+          {/*  and TypeScript. I'm currently learning React, Kotlin and Golang.*/}
+          {/*</p>*/}
+
+          {/*<p className="px-8">*/}
+          {/*  Hello! My name is Seren_Modz 21, an inpired back-end developer.*/}
+          {/*  I'm from the United Kingdom and I'm a full-time college student.*/}
+          {/*  Currently, I mainly work on private projects but I plan to grow*/}
+          {/*  and achieve my goal of working on more open source projects.*/}
+          {/*</p>*/}
+
+          <p className="px-8">
+            Hello, my name is Seren_Modz 21. I'm a full-time college student
+            from the United Kingdom. I'm also a young tech-savvy guy who likes
+            to be around technology; more specifically, programming.
+          </p>
+
+          <p className="px-8">
+            I am learning to become a full-stack developer so I can program
+            websites, mobile applications, etc… This consists of front-end and
+            back-end development. I am great at programming with JavaScript and
+            TypeScript and I’m also learning how to program with Java and
+            Kotlin. For front-end development, I am learning how to code a
+            website using a JavaScript library called React.
+          </p>
+
+          {/*<p className="px-8">*/}
+          {/*  My name is Seren_Modz 21 and I'm a self-taught programmer. My*/}
+          {/*  journey started in high-school. I was born in the United Kingdom*/}
+          {/*  and have been there all my life. I am proficient in JavaScript*/}
+          {/*  and TypeScript. I'm currently learning React, Kotlin and Golang.*/}
+          {/*</p>*/}
+
+          {/*<p className="px-8">*/}
+          {/*  My name is Seren_Modz 21 and I'm a self-taught programmer. My*/}
+          {/*  journey started in high-school. I was born in the United Kingdom*/}
+          {/*  and have been there all my life. I am proficient in JavaScript*/}
+          {/*  and TypeScript. I'm currently learning React, Kotlin and Golang.*/}
+          {/*</p>*/}
+
+          {/*<p className="px-8">*/}
+          {/*  My name is Seren_Modz 21 and I'm a self-taught programmer. My*/}
+          {/*  journey started in high-school. I was born in the United Kingdom*/}
+          {/*  and have been there all my life. I am proficient in JavaScript*/}
+          {/*  and TypeScript. I'm currently learning React, Kotlin and Golang.*/}
+          {/*</p>*/}
+        </div>
+
+        {/*<div className="inline-flex items-center justify-center">*/}
+        {/*  <p className="px-8">*/}
+        {/*    My name is Seren_Modz 21 and I'm a self-taught programmer. My*/}
+        {/*    journey started in high-school. I was born in the United Kingdom*/}
+        {/*    and have been there all my life. I am proficient in JavaScript*/}
+        {/*    and TypeScript. I'm currently learning React, Kotlin and Golang.*/}
+        {/*  </p>*/}
+        {/*</div>*/}
+
+        {/*<div className="inline-flex items-center justify-center">*/}
+        {/*  <p className="px-8">*/}
+        {/*    My name is Seren_Modz 21 and I'm a self-taught programmer. My*/}
+        {/*    journey started in high-school. I was born in the United Kingdom*/}
+        {/*    and have been there all my life. I am proficient in JavaScript*/}
+        {/*    and TypeScript. I'm currently learning React, Kotlin and Golang.*/}
+        {/*  </p>*/}
+        {/*</div>*/}
+
+        {/*<div className="inline-flex items-center justify-center">*/}
+        {/*  <p className="px-8">*/}
+        {/*    My name is Seren_Modz 21 and I'm a self-taught programmer. My*/}
+        {/*    journey started in high-school. I was born in the United Kingdom*/}
+        {/*    and have been there all my life. I am proficient in JavaScript*/}
+        {/*    and TypeScript. I'm currently learning React, Kotlin and Golang.*/}
+        {/*  </p>*/}
+        {/*</div>*/}
+      </main>
+    </div>
   );
 }
-
-const Social = (props: { href: string; icon: IconType; name: string }) => (
-  <a href={props.href} target="_blank" rel="noopener noreferrer">
-    <button
-      aria-label={props.name}
-      title={props.name}
-      className="transition ease-in-out hover:scale-110"
-    >
-      <props.icon className="h-10 w-10" />
-    </button>
-  </a>
-);
