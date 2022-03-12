@@ -1,37 +1,28 @@
 import { NowPlaying } from "@components/NowPlaying";
-import { FaGithub, FaTwitter, FaCode } from "react-icons/fa";
-import { IconType } from "react-icons";
+import { socials } from "@utils/constants";
 
 export default function Footer() {
   return (
-    <div className="h-20 w-full">
-      <footer className="inline-flex h-full w-full items-center justify-between px-4">
-        <div className="max-w-md">
-          <NowPlaying />
-        </div>
-
-        <div className="inline-flex space-x-3">
-          <Social href="/github" name="GitHub" icon={FaGithub} />
-          <Social href="/twitter" name="Twitter" icon={FaTwitter} />
-          <Social
-            href="/github/serenmodz.rocks"
-            name="Source Code"
-            icon={FaCode}
-          />
-        </div>
-      </footer>
-    </div>
+    <footer className="inline-flex h-20 w-full items-center justify-between px-4">
+      <NowPlaying />
+      <div className="space-x-2">
+        {socials.map((social) => (
+          <a
+            href={social.href}
+            key={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              aria-label={social.name}
+              title={social.name}
+              className="transition-all ease-in-out hover:scale-110"
+            >
+              <social.icon className="h-6 w-6" />
+            </button>
+          </a>
+        ))}
+      </div>
+    </footer>
   );
 }
-
-const Social = (props: { href: string; icon: IconType; name: string }) => (
-  <a href={props.href} target="_blank" rel="noopener noreferrer">
-    <button
-      aria-label={props.name}
-      title={props.name}
-      className="transition ease-in-out hover:scale-110"
-    >
-      <props.icon className="h-6 w-6" />
-    </button>
-  </a>
-);

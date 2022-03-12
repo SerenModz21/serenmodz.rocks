@@ -101,7 +101,7 @@ export function NowPlaying() {
   const { data } = useSWR<NowPlayingSong>("/api/spotify/now-playing", fetcher);
 
   return (
-    <div className="flex flex-row items-center space-x-3 p-5 sm:space-x-2 sm:p-0">
+    <div className="flex flex-row items-center space-x-3 sm:space-x-2">
       {data?.songUrl ? <AnimatedBars /> : <SpotifyIcon />}
       <div className="inline-flex w-full max-w-full flex-col truncate sm:flex-row">
         {data?.songUrl ? (

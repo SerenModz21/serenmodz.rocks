@@ -2,8 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   redirects: async () => [
-    redirect("/github/:path*", "https://github.com/SerenModz21/:path*"),
+    redirect("/github", "https://github.com/SerenModz21"),
     redirect("/twitter", "https://twitter.com/SerenModz21"),
+    redirect("/source", "https://github.com/SerenModz21/serenmodz.rocks"),
   ],
 };
 
