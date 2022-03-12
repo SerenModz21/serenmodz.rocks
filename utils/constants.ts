@@ -20,7 +20,7 @@ export const display: { name: string; data: LinkWithFile[] }[] = [
       { href: "https://www.javascript.com/", name: "JavaScript" },
       { href: "https://go.dev/", name: "Go" },
       { href: "https://kotlinlang.org/", name: "Kotlin" },
-      { href: "https://www.java.com/", name: "Java" },
+      // { href: "https://www.java.com/", name: "Java" },
       { href: "https://www.w3schools.com/html/", name: "HTML" },
       { href: "https://www.w3schools.com/css/", name: "CSS" },
     ],

@@ -103,10 +103,10 @@ export function NowPlaying() {
   return (
     <div className="flex flex-row items-center space-x-3 sm:space-x-2">
       {data?.songUrl ? <AnimatedBars /> : <SpotifyIcon />}
-      <div className="inline-flex w-full max-w-full flex-col truncate sm:flex-row">
+      <div className="inline-flex w-full max-w-lg flex-col truncate sm:flex-row">
         {data?.songUrl ? (
           <a
-            className="capsize max-w-max truncate font-medium hover:underline"
+            className="capsize max-w-lg truncate font-medium hover:underline"
             href={data.songUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -119,7 +119,7 @@ export function NowPlaying() {
         <span className="capsize mx-2 hidden text-gray-500 dark:text-gray-400 sm:block">
           {" – "}
         </span>
-        <p className="capsize max-w-max truncate text-gray-900 dark:text-gray-600">
+        <p className="capsize max-w-lg truncate text-gray-900 dark:text-gray-600">
           {data?.artist ?? "Spotify"}
         </p>
       </div>

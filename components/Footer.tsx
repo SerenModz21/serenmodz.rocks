@@ -3,7 +3,7 @@ import { socials } from "@utils/constants";
 
 export default function Footer() {
   return (
-    <footer className="inline-flex h-20 w-full items-center justify-between px-4">
+    <footer className="inline-flex h-20 w-full flex-wrap items-center justify-between px-4">
       <NowPlaying />
       <div className="space-x-2">
         {socials.map((social) => (
