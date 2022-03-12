@@ -4,6 +4,7 @@ const nextConfig = {
   redirects: async () => [
     redirect("/github", "https://github.com/SerenModz21"),
     redirect("/twitter", "https://twitter.com/SerenModz21"),
+    redirect("/source", "https://github.com/SerenModz21/serenmodz.rocks"),
   ],
 };
 

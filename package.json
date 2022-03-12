@@ -8,7 +8,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.2",
     "motion": "^10.6.2",
     "next": "12.1.0",
     "next-seo": "^5.1.0",
@@ -19,13 +18,13 @@
     "swr": "^1.2.2"
   },
   "devDependencies": {
-    "@types/node": "17.0.18",
-    "@types/react": "17.0.39",
+    "@types/node": "17.0.21",
+    "@types/react": "17.0.40",
     "autoprefixer": "^10.4.2",
-    "eslint": "8.10.0",
+    "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
     "eslint-config-prettier": "^8.5.0",
-    "postcss": "^8.4.7",
+    "postcss": "^8.4.8",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.8",
     "tailwindcss": "^3.0.23",
