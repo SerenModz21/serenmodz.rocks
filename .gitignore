@@ -39,3 +39,8 @@ yarn-error.log*
 
 # jetbrains
 .idea
+
+# sitemap
+robots.txt
+sitemap*.xml
+
