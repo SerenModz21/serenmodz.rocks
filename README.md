@@ -1,3 +1,6 @@
+![Vercel](https://vercelbadge.vercel.app/api/SerenModz21/serenmodz.rocks)
+![Wakatime](https://wakatime.com/badge/github/SerenModz21/serenmodz.rocks.svg)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Credits
