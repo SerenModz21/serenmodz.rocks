@@ -5,8 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postbuild": "yarn next-sitemap"
+    "lint": "next lint"
   },
   "dependencies": {
     "motion": "^10.6.2",
@@ -25,7 +24,6 @@
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
     "eslint-config-prettier": "^8.5.0",
-    "next-sitemap": "^2.5.10",
     "postcss": "^8.4.12",
     "prettier": "^2.6.0",
     "prettier-plugin-tailwindcss": "^0.1.8",
