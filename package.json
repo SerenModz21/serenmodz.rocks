@@ -8,7 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "motion": "^10.6.2",
+    "motion": "^10.7.0",
     "next": "12.1.0",
     "next-seo": "^5.1.0",
     "next-themes": "^0.1.1",
