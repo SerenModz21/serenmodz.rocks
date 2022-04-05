@@ -1,14 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>Kings-World/.github:renovate-config"],
-  "npm": {
-    "rangeStrategy": "bump",
-    "packageRules": [
-      {
-        "matchUpdateTypes": ["minor", "patch"],
-        "matchCurrentVersion": "!/^0/",
-        "automerge": true
-      }
-    ]
-  }
+  "extends": ["github>Kings-World/.github:renovate-config"]
 }
