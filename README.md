@@ -5,8 +5,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Credits
 
-- [Lee Robinson](https://github.com/leerob/leerob.io) has amazing code snippets on his website (now playing, top tracks and swr)
-- [Anthony Collier](https://github.com/acollierr17/acollier.dev) for the customized versions of Lee's code snippets (now playing and swr)
+- [Lee Robinson](https://github.com/leerob/leerob.io) has amazing code snippets on his website (now playing, top tracks and fetcher)
+- [Anthony Collier](https://github.com/acollierr17/acollier.dev) for the customized versions of Lee's code snippets (now playing and fetcher)
 - [Craftwork](https://error404.fun/) for the free-to-use 404 illustration (click [here](https://craftwork.design/license/) to learn about their license conditions)
 
 ## Getting Started
