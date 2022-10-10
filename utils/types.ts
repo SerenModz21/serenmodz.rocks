@@ -1,3 +1,4 @@
+// credits: https://github.com/acollierr17/acollier.dev/blob/main/lib/types.ts
 export interface Song {
   title: string;
   slug: string;

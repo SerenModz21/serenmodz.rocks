@@ -51,84 +51,6 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@motionone/animation@^10.10.1":
-  version "10.10.1"
-  resolved "https://registry.yarnpkg.com/@motionone/animation/-/animation-10.10.1.tgz#d3d3ecb11c6d7507a104b080f31b07be9bc7056d"
-  integrity sha512-iX839/Ir5wT7hVX0yCZYjcDhHAOkVR5hIhVBTf37qEUD693uVwrxC2i1BI9vMVPc1rIoFtftYjOtwoO9Oq/aog==
-  dependencies:
-    "@motionone/easing" "^10.9.0"
-    "@motionone/types" "^10.9.0"
-    "@motionone/utils" "^10.9.0"
-    tslib "^2.3.1"
-
-"@motionone/dom@^10.11.0":
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/@motionone/dom/-/dom-10.11.0.tgz#dc2e46b0e21044cc9ae89a994cd6725eac09e48b"
-  integrity sha512-ST56HBslkeoeDwqRFWafkD+JT5FEwlHqB2K2KGaQh6wo6zfKQ9xwjQcqgDiBv2gg6s8ycjHAdFS6dnMHQ5hXKw==
-  dependencies:
-    "@motionone/animation" "^10.10.1"
-    "@motionone/generators" "^10.9.0"
-    "@motionone/types" "^10.9.0"
-    "@motionone/utils" "^10.9.0"
-    hey-listen "^1.0.8"
-    tslib "^2.3.1"
-
-"@motionone/easing@^10.9.0":
-  version "10.9.0"
-  resolved "https://registry.yarnpkg.com/@motionone/easing/-/easing-10.9.0.tgz#42910c70dd30e1bbba27a9612ce03bca022d0da7"
-  integrity sha512-FYIr3HlQEb7aE5LOpY6BPQUaPyKeJt6VfGA+npy73+JIGqoVOjbrdZ1ZQxzTXqO76mG3UZvv1+twrDamRQsxFw==
-  dependencies:
-    "@motionone/utils" "^10.9.0"
-    tslib "^2.3.1"
-
-"@motionone/generators@^10.9.0":
-  version "10.9.0"
-  resolved "https://registry.yarnpkg.com/@motionone/generators/-/generators-10.9.0.tgz#46f3e706f45a9566db7e0ce62d677c884813cdaa"
-  integrity sha512-BOkHx4qQswJV+z/6k05qdvRENE4hG606NI5cIPTsLtSuksnRn83utuj/15VTNoFeYHuTdhwzxvIPvlPVayIGTg==
-  dependencies:
-    "@motionone/types" "^10.9.0"
-    "@motionone/utils" "^10.9.0"
-    tslib "^2.3.1"
-
-"@motionone/react@^10.11.0":
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/@motionone/react/-/react-10.11.0.tgz#ccf6ec71e23cf88067aaecd5ba8b89637a87351f"
-  integrity sha512-FzVA/P9Hcdl5fL/AKrXrQbEuA+RqHBLExl5JkEvqgNyBp4qPQppRRUS9HGJ8SppSBYuNMkJvBBLQVtC9ghk5EQ==
-  dependencies:
-    "@motionone/dom" "^10.11.0"
-    hey-listen "^1.0.8"
-    tslib "^2.3.1"
-
-"@motionone/svelte@^10.11.0":
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/@motionone/svelte/-/svelte-10.11.0.tgz#dedbd15d5c780747496ea755bdf0874865c8d169"
-  integrity sha512-GRYM9wci0KhFngKgJhtzogjaA3dmWaOkKeM2HMZcTJlpXbIWKVXeADQDv+DiS4uW0l2cqdKqEa1BOpemdwDRAw==
-  dependencies:
-    "@motionone/dom" "^10.11.0"
-    tslib "^2.3.1"
-
-"@motionone/types@^10.9.0":
-  version "10.9.0"
-  resolved "https://registry.yarnpkg.com/@motionone/types/-/types-10.9.0.tgz#7caa9c1b746dd30bcf6104ce9c82a5a928385da2"
-  integrity sha512-ZcEDfsrS2ym9+vExV7+59avkzEO/PLkNj16uaDvbWhi0Q/vOZ72j2LQTrtDLWVyZRIeUaB/i8DJP017Gj6UYQw==
-
-"@motionone/utils@^10.9.0":
-  version "10.9.0"
-  resolved "https://registry.yarnpkg.com/@motionone/utils/-/utils-10.9.0.tgz#a68fe41fe37e4365b07dfc676f014a0e43b8beb2"
-  integrity sha512-5IgmwQ8TdH1HsQ9d2QZeBCu9+HkqjoYRYItRpmusoyiedPMZaKdU3pr3qFP5nbAj68Ww2sTUxgEZEOF20qJA6w==
-  dependencies:
-    "@motionone/types" "^10.9.0"
-    hey-listen "^1.0.8"
-    tslib "^2.3.1"
-
-"@motionone/vue@^10.11.0":
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/@motionone/vue/-/vue-10.11.0.tgz#7885b8ce4c75316ee5e24fc92119c27237c43154"
-  integrity sha512-2qfkcHsqtJAS5XJCtxsGu0Rkp6oaTOPeuaeoOKiv9e7A3CpB5o6ZTHLjG5IeRoAGiEQFhX73TsEx4kne4gW33g==
-  dependencies:
-    "@motionone/dom" "^10.11.0"
-    tslib "^2.3.1"
-
 "@next/env@12.3.1":
   version "12.3.1"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.3.1.tgz#18266bd92de3b4aa4037b1927aa59e6f11879260"
@@ -561,10 +483,26 @@ color-convert@^2.0.1:
   dependencies:
     color-name "~1.1.4"
 
-color-name@^1.1.4, color-name@~1.1.4:
+color-name@^1.0.0, color-name@^1.1.4, color-name@~1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
+
+color-string@^1.9.0:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.9.1.tgz#4467f9146f036f855b764dfb5bf8582bf342c7a4"
+  integrity sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==
+  dependencies:
+    color-name "^1.0.0"
+    simple-swizzle "^0.2.2"
+
+color@^4.2:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/color/-/color-4.2.3.tgz#d781ecb5e57224ee43ea9627560107c0e0c6463a"
+  integrity sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==
+  dependencies:
+    color-convert "^2.0.1"
+    color-string "^1.9.0"
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -585,6 +523,14 @@ cross-spawn@^7.0.2:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
+css-selector-tokenizer@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/css-selector-tokenizer/-/css-selector-tokenizer-0.8.0.tgz#88267ef6238e64f2215ea2764b3e2cf498b845dd"
+  integrity sha512-Jd6Ig3/pe62/qe5SBPTN8h8LeUg/pT4lLgtavPf7updwwHpvFzxvOQBHYj2LZDMjUnBzgvIUSjRcf6oT5HzHFg==
+  dependencies:
+    cssesc "^3.0.0"
+    fastparse "^1.1.2"
+
 cssesc@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
@@ -594,6 +540,16 @@ csstype@^3.0.2:
   version "3.0.11"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.11.tgz#d66700c5eacfac1940deb4e3ee5642792d85cd33"
   integrity sha512-sa6P2wJ+CAbgyy4KFssIb/JNMLxFvKF1pCYCSXS8ZMuqZnMsrxqI2E5sPyoTpxoPU/gVZMzr2zjOfg8GIZOMsw==
+
+daisyui@^2.31.0:
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.31.0.tgz#906bc447b59c24782320f33fbc990ea1d8c2200c"
+  integrity sha512-qepRXgQPLNcJ8ZPZy+dUvsC7mRWvMLRcVMe85/wZA60Tnhm/bkidhOzdllL8aAk2JX+W/xlIsTJ8NZFpPm+eyw==
+  dependencies:
+    color "^4.2"
+    css-selector-tokenizer "^0.8.0"
+    postcss-js "^4.0.0"
+    tailwindcss "^3"
 
 damerau-levenshtein@^1.0.7:
   version "1.0.8"
@@ -1014,6 +970,11 @@ fast-levenshtein@^2.0.6:
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
+fastparse@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/fastparse/-/fastparse-1.1.2.tgz#91728c5a5942eced8531283c79441ee4122c35a9"
+  integrity sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==
+
 fastq@^1.6.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.13.0.tgz#616760f88a7526bdfc596b7cab8c18938c36b98c"
@@ -1227,11 +1188,6 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-hey-listen@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/hey-listen/-/hey-listen-1.0.8.tgz#8e59561ff724908de1aa924ed6ecc84a56a9aa68"
-  integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
-
 ignore@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.0.tgz#6d3bac8fa7fe0d45d9f9be7bac2fc279577e345a"
@@ -1271,6 +1227,11 @@ internal-slot@^1.0.3:
     get-intrinsic "^1.1.0"
     has "^1.0.3"
     side-channel "^1.0.4"
+
+is-arrayish@^0.3.1:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.3.2.tgz#4574a2ae56f7ab206896fb431eaeed066fdf8f03"
+  integrity sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==
 
 is-bigint@^1.0.1:
   version "1.0.4"
@@ -1462,6 +1423,11 @@ lilconfig@^2.0.5:
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.0.5.tgz#19e57fd06ccc3848fd1891655b5a447092225b25"
   integrity sha512-xaYmXZtTHPAw5m+xLN8ab9C+3a8YmV3asNSPOATITbtwrfbwaLJj8h66H1WMIpALCkqsIzK3h7oQ+PdX+LQ9Eg==
 
+lilconfig@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.0.6.tgz#32a384558bd58af3d4c6e077dd1ad1d397bc69d4"
+  integrity sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg==
+
 locate-path@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-2.0.0.tgz#2b568b265eec944c6d9c0de9c3dbbbca0354cd8e"
@@ -1525,18 +1491,6 @@ minimist@^1.2.6:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
-
-motion@^10.11.0:
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/motion/-/motion-10.11.0.tgz#91db6bdadb592df4affbe1161cc8b7d495e0e35c"
-  integrity sha512-4F5p+9FOx0UjcCp1T9G3AP9F7EM3WKrD5E0mKfDzoXr6Kgo1CZ5+s4UHzXsYLNtceYVMTqGA20nWsjI9BvZbcg==
-  dependencies:
-    "@motionone/animation" "^10.10.1"
-    "@motionone/dom" "^10.11.0"
-    "@motionone/react" "^10.11.0"
-    "@motionone/svelte" "^10.11.0"
-    "@motionone/types" "^10.9.0"
-    "@motionone/vue" "^10.11.0"
 
 ms@2.0.0:
   version "2.0.0"
@@ -1961,7 +1915,7 @@ resolve-from@^4.0.0:
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
   integrity sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==
 
-resolve@^1.1.7:
+resolve@^1.1.7, resolve@^1.22.1:
   version "1.22.1"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.1.tgz#27cb2ebb53f91abb49470a928bba7558066ac177"
   integrity sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==
@@ -2045,6 +1999,13 @@ side-channel@^1.0.4:
     call-bind "^1.0.0"
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
+
+simple-swizzle@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
+  integrity sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==
+  dependencies:
+    is-arrayish "^0.3.1"
 
 slash@^3.0.0:
   version "3.0.0"
@@ -2143,6 +2104,34 @@ swr@^1.3.0:
   resolved "https://registry.yarnpkg.com/swr/-/swr-1.3.0.tgz#c6531866a35b4db37b38b72c45a63171faf9f4e8"
   integrity sha512-dkghQrOl2ORX9HYrMDtPa7LTVHJjCTeZoB1dqTbnnEDlSvN8JEKpYIYurDfvbQFUUS8Cg8PceFVZNkW0KNNYPw==
 
+tailwindcss@^3:
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.1.8.tgz#4f8520550d67a835d32f2f4021580f9fddb7b741"
+  integrity sha512-YSneUCZSFDYMwk+TGq8qYFdCA3yfBRdBlS7txSq0LUmzyeqRe3a8fBQzbz9M3WS/iFT4BNf/nmw9mEzrnSaC0g==
+  dependencies:
+    arg "^5.0.2"
+    chokidar "^3.5.3"
+    color-name "^1.1.4"
+    detective "^5.2.1"
+    didyoumean "^1.2.2"
+    dlv "^1.1.3"
+    fast-glob "^3.2.11"
+    glob-parent "^6.0.2"
+    is-glob "^4.0.3"
+    lilconfig "^2.0.6"
+    normalize-path "^3.0.0"
+    object-hash "^3.0.0"
+    picocolors "^1.0.0"
+    postcss "^8.4.14"
+    postcss-import "^14.1.0"
+    postcss-js "^4.0.0"
+    postcss-load-config "^3.1.4"
+    postcss-nested "5.0.6"
+    postcss-selector-parser "^6.0.10"
+    postcss-value-parser "^4.2.0"
+    quick-lru "^5.1.1"
+    resolve "^1.22.1"
+
 tailwindcss@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.1.4.tgz#64b09059805505902139fa805d97046080bd90b9"
@@ -2197,11 +2186,6 @@ tslib@^1.8.1:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
-
-tslib@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
-  integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
 tslib@^2.4.0:
   version "2.4.0"
