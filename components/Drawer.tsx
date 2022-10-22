@@ -21,7 +21,10 @@ export default function Drawer(props: { children: ReactNode }) {
                 <NavLink href="/" onClick={close}>Home</NavLink>
               </li>
               <li>
-                <NavLink href="/projects" onClick={close}>Projects</NavLink>
+                <NavLink href="/#projects" onClick={close}>Projects</NavLink>
+              </li>
+              <li>
+                <NavLink href="/#referrals" onClick={close}>Referrals</NavLink>
               </li>
             </ul>
          
