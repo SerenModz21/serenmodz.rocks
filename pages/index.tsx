@@ -25,7 +25,7 @@ export default function Home() {
               href={data.songUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="capsize truncate font-medium hover:underline"
+              className="capsize font-medium hover:underline"
             >
               {data.title} — {data.artist}
             </a>
@@ -67,6 +67,13 @@ export default function Home() {
             description="🛠️ utility bot for the mixtape community server"
             url="https://github.com/mixtape-bot/deck.js"
             language="TypeScript"
+            archived
+          />
+          <GithubCard
+            name="mixtape-bot/rpc"
+            description="✨ rep your mixtape appreciation!"
+            url="https://github.com/mixtape-bot/rpc"
+            language="JavaScript"
             archived
           />
         </div>
