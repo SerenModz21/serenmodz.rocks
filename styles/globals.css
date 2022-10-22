@@ -3,11 +3,7 @@
 @tailwind utilities;
 
 #__next {
-  @apply h-screen max-h-screen flex flex-col;
-}
-
-main {
-  @apply mb-auto;
+  @apply min-h-screen bg-base-200;
 }
 
 .link-button {

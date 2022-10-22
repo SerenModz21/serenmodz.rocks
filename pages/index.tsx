@@ -1,49 +1,103 @@
 import NextImage from "next/image";
-import { FaCode, FaGithub, FaTwitter } from "react-icons/fa";
-import { Link } from "@utils/constants";
-import ExternalLink from "@components/ExternalLink";
+import GithubCard from "@components/GithubCard";
+import Card from "@components/Card";
+import Layout from "@components/Layout";
+import { NowPlayingSong } from "@utils/types";
+import useSWR from "swr";
 
 export default function Home() {
+  const { data } = useSWR<NowPlayingSong>("/api/now-playing");
+
   return (
-    <>
-      {/* hero */}
-      <div className="hero mb-auto h-screen bg-base-200">
-        <div className="align-center hero-content text-center">
-          <div className="max-w-sm">
-            <div className="relative mx-auto h-48 w-48">
-              <NextImage
-                src="/logo.png"
-                alt=""
-                className="min-w-sm mask mask-circle shadow-xl"
-                layout="fill"
-              />
-            </div>
-
-            <div className="divider"></div>
-
-            <h1 className="text-5xl font-bold">Seren_Modz 21</h1>
-            {/*<p className="pt-6">A self-taught backend programmer.</p>*/}
-            <p className="py-6">
-              Hello! My name is Seren_Modz 21, an inspired back-end developer.
-              I&#39;m from the United Kingdom and I&#39;m a full-time college student.
-              Currently, I mainly work on private projects but I plan to grow
-              and achieve my goal of working on more open source projects.
-            </p>
-            {/*<button className="btn btn-primary">Get Started</button>*/}
-            <div className="inline-flex min-w-full justify-evenly">
-              <ExternalLink href={Link.GitHub}>
-                <FaGithub className="link-button h-10 w-10" />
-              </ExternalLink>
-              <ExternalLink href={Link.Twitter}>
-                <FaTwitter className="link-button h-10 w-10" />
-              </ExternalLink>
-              <ExternalLink href={Link.Source}>
-                <FaCode className="link-button h-10 w-10" />
-              </ExternalLink>
-            </div>
-          </div>
+    <Layout>
+      {/* logo + content */}
+      <div className="w-full px-4 sm:p-8 flex flex-col sm:flex-row justify-center align-center">
+        {/* logo */}
+        <div className="h-32 sm:h-40 w-32 sm:w-40 mb-2 sm:mb-0">
+          <NextImage src="/logo.png" alt="" height={160} width={160} className="rounded-full" layout="responsive" />
+        </div>
+        <div className="flex flex-col sm:pl-8">
+          <h1 id="main" className="text-2xl font-bold">Seren_Modz 21</h1>
+          {data?.isPlaying && (
+            <p className="sm:max-w-md py-1 pr-2 sm:pr-0 text-gray-400">
+            Listening to{" "}
+            <a
+              href={data.songUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="capsize truncate font-medium hover:underline"
+            >
+              {data.title} — {data.artist}
+            </a>
+          </p>
+          )}
+          <p className="sm:max-w-md py-1 pr-2 sm:pr-0">
+            Hello! My name is Seren_Modz 21, an inspired back-end developer.
+            I&#39;m from the United Kingdom and I&#39;m a full-time college student.
+            Currently, I mainly work on private projects but I plan to grow
+            and achieve my goal of working on more open source projects.
+          </p>
         </div>
       </div>
-    </>
+
+      {/* projects */}
+      <div className="w-full pl-4 pr-8 sm:px-8 pb-8 pt-2 sm:pt-0">
+        <h2 id="projects" className="text-xl font-bold mb-4">Projects</h2>
+        <div className="grid gap-4">
+          <GithubCard
+            name="SerenModz21/paste.gg"
+            description="An easy-to-use library for interacting with the Paste.GG API."
+            url="https://github.com/SerenModz21/paste.gg"
+            language="TypeScript"
+          />
+         <GithubCard
+            name="SerenModz21/serenmodz.rocks"
+            description="My very own personal website, made using Next.js, TailwindCSS and TypeScript"
+            url="https://github.com/SerenModz21/serenmodz.rocks"
+            language="TypeScript"
+          />
+          <GithubCard
+            name="Kings-World/fabric-mod"
+            description="A Discord to Minecraft bridge for Kings MC"
+            url="https://github.com/Kings-World/fabric-mod"
+            language="Java"
+          />
+          <GithubCard
+            name="mixtape-bot/deck.js"
+            description="🛠️ utility bot for the mixtape community server"
+            url="https://github.com/mixtape-bot/deck.js"
+            language="TypeScript"
+            archived
+          />
+        </div>
+      </div>
+
+      {/* referrals */}
+      <div className="w-full pl-4 pr-8 sm:px-8 pb-8">
+        <h2 id="referrals" className="text-xl font-bold mb-4">Referrals</h2>
+        <div className="grid gap-4">
+          <Card
+            url="https://seren.link/oxide"
+            name="Oxide Hosting - affordable and reliable hosting"
+            description="We currently provide consumers both reliable and high quality Virtual Servers (VPS), Game Hosting, Website Hosting, Discord Bot Hosting and Domains at affordable prices."
+          />
+          <Card
+            url="https://seren.link/sneak"
+            name="Sneak Energy - 5 sachets worth £10 for free"
+            description="We're on a mission to inspire you to create. Our sugar-free energy formula is a different kind of energy drink, with natural colours and natural flavours."
+          />
+          <Card
+            url="https://seren.link/digitalocean"
+            name="DigitalOcean - $200, 60-day credit for new users"
+            description="Helping millions of developers easily build, test, manage, and scale applications of any size – faster than ever before."
+          />
+          <Card
+            url="https://seren.link/dashlane"
+            name="Dashlane - claim your 6 months of premium"
+            description="Live a safer life online with Dashlane password manager: Store and fill in all your passwords, personal information, and payments."
+          />
+        </div>
+      </div>
+    </Layout>
   );
 }

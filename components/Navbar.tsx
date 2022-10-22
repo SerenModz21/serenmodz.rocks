@@ -1,56 +1,70 @@
 import NextLink from "next/link";
-import { FaBars, FaMoon, FaSun, FaTimes } from "react-icons/fa";
 import { useRouter } from "next/router";
+import { FaSun, FaMoon, FaBars, FaTimes, FaCode, FaGithub, FaTwitter } from "react-icons/fa";
+import ExternalLink from "@components/ExternalLink";
+import { AnchorTag } from "@utils/types";
+import { Link } from "@utils/constants";
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100">
-      <div className="flex-1">
-        <NextLink href="/" passHref>
-          <a className="btn btn-ghost text-xl normal-case">Seren_Modz 21</a>
-        </NextLink>
-      </div>
-      {/* TODO: put nav links in a better place */}
-      <div className="align-center breadcrumbs hidden text-lg sm:block">
-        <ul>
+    <div className="w-full h-16 navbar justify-between">
+      {/* nav menu */}
+      <nav className="align-center text-lg hidden sm:flex">
+        <ul className="menu menu-horizontal">
           <li>
             <NavLink href="/">Home</NavLink>
           </li>
           <li>
-            <NavLink href="/projects">Projects</NavLink>
+            <NavLink href="/#projects">Projects</NavLink>
+          </li>
+          <li>
+            <NavLink href="/#referrals">Referrals</NavLink>
           </li>
         </ul>
-      </div>
-      <div className="flex-none">
-        {/* theme toggle TODO: add theme toggle functionality, either with next-theme or theme-change */}
-        {/*<button className="btn btn-circle btn-ghost">*/}
-        <label className="swap-rotate btn swap btn-ghost btn-circle">
-          <input type="checkbox" />
-          <FaSun className="swap-on h-5 w-5" title="Switch to light mode" />
-          <FaMoon className="swap-off h-5 w-5" title="Switch to dark mode" />
-        </label>
-        {/*</button>*/}
+      </nav>
 
-        {/* hamburger menu TODO: add hamburger menu functionality */}
-        {/*<button className="btn btn-circle btn-ghost">*/}
-        <label className="swap-rotate btn swap btn-ghost btn-circle lg:hidden">
+      {/* hamburger menu */}
+      <label htmlFor="nav-menu" className="swap-rotate btn swap btn-ghost btn-circle sm:hidden">
+        <input type="checkbox" />
+        <FaTimes className="swap-on h-5 w-5" />
+        <FaBars className="swap-off h-5 w-5" />
+      </label>
+
+      {/* links */}
+      <div className="flex-none grid grid-flow-col align-center pr-4 sm:pr-0">
+        {/* github */}
+        <ExternalLink href={Link.GitHub} title="Go to GitHub" className="btn btn-ghost btn-circle">
+          <FaGithub className="link-button h-6 w-6" />
+        </ExternalLink>
+
+        {/* twitter */}
+        <ExternalLink href={Link.Twitter} title="Go to Twitter" className="btn btn-ghost btn-circle">
+          <FaTwitter className="link-button h-6 w-6" />
+        </ExternalLink>
+
+        {/* source */}
+        <ExternalLink href={Link.Source} title="View Source" className="btn btn-ghost btn-circle">
+          <FaCode className="link-button h-6 w-6" />
+        </ExternalLink>
+
+        {/* theme toggle */}
+        <label className="btn swap btn-ghost btn-circle">
           <input type="checkbox" />
-          <FaTimes className="swap-on h-5 w-5" />
-          <FaBars className="swap-off h-5 w-5" />
+          <FaSun data-set-theme="light" title="Switch to light mode" className="h-6 w-6 swap-on" />
+          <FaMoon data-set-theme="dark" title="Switch to dark mode" className="h-6 w-6 swap-off" />
         </label>
-        {/*</button>*/}
       </div>
     </div>
   );
 }
 
-function NavLink(props: { children: string; href: string }) {
+export function NavLink(props: AnchorTag<true>) {
   return (
     <NextLink href={props.href} passHref>
       {useRouter().asPath === props.href ? (
-        <a className="font-medium">{props.children}</a>
+        <a className="font-medium" {...props} />
       ) : (
-        <a>{props.children}</a>
+        <a {...props} />
       )}
     </NextLink>
   );

@@ -1,7 +1,7 @@
+import { AnchorTag } from "@utils/types";
 import Link from "next/link";
-import { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
 
-export default function ExternalLink(props: DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>) {
+export default function ExternalLink(props: AnchorTag) {
   return props.href ? (
     <Link href={props.href} passHref>
       <a target="_blank" rel="noopener noreferrer" {...props} />
