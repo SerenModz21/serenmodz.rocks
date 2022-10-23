@@ -9,7 +9,7 @@ export default function Drawer(props: { children: ReactNode }) {
   return (
     <div className="drawer">
       <input id="nav-menu" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content -translate-x-0 flex flex-col">
+      <div id="content" className="drawer-content -translate-x-0 flex flex-col">
         {props.children}
       </div>
       <div className="drawer-side">
