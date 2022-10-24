@@ -45,32 +45,32 @@ export default function Home() {
         <h2 id="projects" className="text-xl font-bold mb-4">Projects</h2>
         <div className="grid gap-4">
           <GithubCard
-            name="SerenModz21/paste.gg"
+            name="paste.gg"
             description="An easy-to-use library for interacting with the Paste.GG API."
             url="https://github.com/SerenModz21/paste.gg"
             language="TypeScript"
           />
          <GithubCard
-            name="SerenModz21/serenmodz.rocks"
+            name="serenmodz.rocks"
             description="My very own personal website, made using Next.js, TailwindCSS and TypeScript"
             url="https://github.com/SerenModz21/serenmodz.rocks"
             language="TypeScript"
           />
           <GithubCard
-            name="Kings-World/fabric-mod"
+            name="fabric-mod"
             description="A Discord to Minecraft bridge for Kings MC"
             url="https://github.com/Kings-World/fabric-mod"
             language="Java"
           />
           <GithubCard
-            name="mixtape-bot/deck.js"
+            name="deck.js"
             description="🛠️ utility bot for the mixtape community server"
             url="https://github.com/mixtape-bot/deck.js"
             language="TypeScript"
             archived
           />
           <GithubCard
-            name="mixtape-bot/rpc"
+            name="rpc"
             description="✨ rep your mixtape appreciation!"
             url="https://github.com/mixtape-bot/rpc"
             language="JavaScript"
