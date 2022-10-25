@@ -1,23 +1,24 @@
 import { ReactNode } from "react";
-import Navbar from "@components/Navbar";
-import Footer from "@components/Footer";
+import Drawer from "./Drawer";
+import Navbar from "./Navbar";
 
-export default function Layout(props: {
-  children: ReactNode;
-  className?: string;
-}) {
+export default function Layout(props: { children: ReactNode }) {
   return (
-    <div className="container mx-auto flex min-h-screen flex-col justify-between md:max-w-2xl">
-      {/* navbar */}
-      <Navbar />
+    <Drawer>
+      <div>
+        <div className="sm:max-w-2xl mx-0 sm:mx-auto">
+          {/* navbar */}
+          <Navbar />
 
-      {/* main */}
-      <main className={`px-4 ${props.className ?? ""}`.trim()}>
-        {props.children}
-      </main>
+          {/* main content */}
+          <main>
+            {props.children}
+          </main>
 
-      {/* footer */}
-      <Footer />
-    </div>
-  );
+          {/* footer */}
+          {/* TODO: make new footer */}
+        </div>
+      </div>
+    </Drawer>
+  )
 }

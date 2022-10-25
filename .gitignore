@@ -39,3 +39,7 @@ yarn-error.log*
 
 # jetbrains
 .idea
+
+# yarn files
+.yarn/install-state.gz
+.yarn/build-state.yml

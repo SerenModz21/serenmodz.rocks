@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#__next {
+  @apply min-h-screen bg-base-200;
+}
+
+.link-button {
+  @apply transition-all ease-in-out hover:scale-110 hover:brightness-125;
+}
+
+.sm\:hide {
+  @apply hidden md:block;
+}

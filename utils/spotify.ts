@@ -1,3 +1,4 @@
+// credits: https://github.com/acollierr17/acollier.dev/blob/main/lib/spotify.ts
 import qs from "node:querystring";
 
 const CLIENT_ID = process.env.SPOTIFY_CLIENT_ID;

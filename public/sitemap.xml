@@ -7,6 +7,11 @@
   <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
   <url>
     <loc>https://www.serenmodz.rocks/</loc>
-    <lastmod>2022-03-18T18:39:59+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://www.serenmodz.rocks/#projects</loc>
+  </url>
+  <url>
+    <loc>https://www.serenmodz.rocks/#referrals</loc>
   </url>
 </urlset>
