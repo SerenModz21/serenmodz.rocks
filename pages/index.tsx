@@ -19,7 +19,7 @@ export default function Home() {
         <div className="flex flex-col sm:pl-8">
           <h1 id="main" className="text-2xl font-bold">Seren_Modz 21</h1>
           {data?.isPlaying && (
-            <p className="sm:max-w-md py-1 pr-2 sm:pr-0 text-gray-400 dark:text-gray-500">
+            <p className="sm:max-w-md py-1 pr-2 sm:pr-0 text-gray-400">
             Listening to{" "}
             <a
               href={data.songUrl}
@@ -90,7 +90,7 @@ export default function Home() {
           />
           <Card
             url="https://seren.link/sneak"
-            name="Sneak Energy - 5 sachets worth £10 for free"
+            name="Sneak Energy - 5 sachets worth (£/$/€)10 for free"
             description="We're on a mission to inspire you to create. Our sugar-free energy formula is a different kind of energy drink, with natural colours and natural flavours."
           />
           <Card
