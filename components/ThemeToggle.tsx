@@ -18,6 +18,7 @@ export default function ThemeToggle() {
       type="button"
       aria-label={`Switch to ${text} mode`}
       title={`Switch to ${text} mode`}
+      className="btn btn-ghost btn-circle"
       onClick={() => setTheme(text.toLowerCase())}
     >
       {mounted && (
