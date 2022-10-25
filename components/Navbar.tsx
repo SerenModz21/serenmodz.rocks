@@ -1,9 +1,10 @@
 import NextLink from "next/link";
 import { useRouter } from "next/router";
-import { FaSun, FaMoon, FaBars, FaTimes, FaCode, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaBars, FaTimes, FaCode, FaGithub, FaTwitter } from "react-icons/fa";
 import ExternalLink from "@components/ExternalLink";
 import { AnchorTag } from "@utils/types";
 import { Link } from "@utils/constants";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   return (
@@ -48,11 +49,12 @@ export default function Navbar() {
         </ExternalLink>
 
         {/* theme toggle */}
-        <label className="btn swap btn-ghost btn-circle">
+        {/* <label className="btn swap btn-ghost btn-circle">
           <input type="checkbox" />
           <FaSun data-set-theme="light" title="Switch to light mode" className="h-6 w-6 swap-on" />
           <FaMoon data-set-theme="dark" title="Switch to dark mode" className="h-6 w-6 swap-off" />
-        </label>
+        </label> */}
+        <ThemeToggle />
       </div>
     </div>
   );

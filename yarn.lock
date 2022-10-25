@@ -1424,6 +1424,11 @@ next-seo@^5.8.0:
   resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-5.8.0.tgz#c71c791971e030af448cae61dc1ece5e79da1790"
   integrity sha512-V5W/JwqdoX6/0zG4S7m5g8zNajYffytWigkPo2hrbHhLD18yGFBU9607OPhvbI9zX3QjWQFMBSmlUY456xt9cA==
 
+next-themes@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.2.1.tgz#0c9f128e847979daf6c67f70b38e6b6567856e45"
+  integrity sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==
+
 next@12.3.1:
   version "12.3.1"
   resolved "https://registry.yarnpkg.com/next/-/next-12.3.1.tgz#127b825ad2207faf869b33393ec8c75fe61e50f1"
@@ -1981,11 +1986,6 @@ text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
-
-theme-change@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/theme-change/-/theme-change-2.2.0.tgz#dcc48ffe6b806258bc5f1caf8220527589e354c0"
-  integrity sha512-vvgZEEfmH3yZGq2bWHyzs2AOG1SRfNnCvWbEnPzGpdvvCmAWtOsEdg4H6k/OMapegG+LEQvQ76tQoN9B+FT7rg==
 
 to-regex-range@^5.0.1:
   version "5.0.1"

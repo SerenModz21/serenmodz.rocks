@@ -14,20 +14,17 @@ export default function Drawer(props: { children: ReactNode }) {
       </div>
       <div className="drawer-side">
         <label htmlFor="nav-menu" className="drawer-overlay">
-          {/* <Navbar /> */}
-       
-            <ul className="menu p-4 overflow-y-auto w-2/4 h-screen rounded-box bg-base-100">
-              <li>
-                <NavLink href="/" onClick={close}>Home</NavLink>
-              </li>
-              <li>
-                <NavLink href="/#projects" onClick={close}>Projects</NavLink>
-              </li>
-              <li>
-                <NavLink href="/#referrals" onClick={close}>Referrals</NavLink>
-              </li>
-            </ul>
-         
+          <ul className="menu p-4 overflow-y-auto w-2/4 h-screen rounded-box bg-base-100">
+            <li>
+              <NavLink href="/" onClick={close}>Home</NavLink>
+            </li>
+            <li>
+              <NavLink href="/#projects" onClick={close}>Projects</NavLink>
+            </li>
+            <li>
+              <NavLink href="/#referrals" onClick={close}>Referrals</NavLink>
+            </li>
+          </ul>
         </label>
       </div>
     </div>
