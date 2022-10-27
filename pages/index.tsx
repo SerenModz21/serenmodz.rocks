@@ -14,7 +14,7 @@ export default function Home() {
       <div className="w-full px-4 sm:p-8 flex flex-col sm:flex-row justify-center align-center">
         {/* logo */}
         <div className="h-32 sm:h-40 w-32 sm:w-40 mb-2 sm:mb-0">
-          <NextImage src="/logo.png" alt="" height={160} width={160} className="rounded-full" layout="responsive" priority />
+          <NextImage src="/logo.png" alt="" height={160} width={160} className="rounded-full" priority />
         </div>
         <div className="flex flex-col sm:pl-8">
           <h1 id="main" className="text-2xl font-bold">Seren_Modz 21</h1>
