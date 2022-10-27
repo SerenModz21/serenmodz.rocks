@@ -9,8 +9,7 @@ export default function NotFound() {
       <NextSeo title="Page not found" />
       <div className="justify-center align-center text-center">
         <NextImage
-          // layout="fill"
-          objectFit="cover"
+          object-fit="cover"
           src="/404.svg"
           alt="404"
           height={400}
