@@ -2,7 +2,7 @@ import { FaCode, FaGithub, FaTwitter } from "react-icons/fa";
 import ExternalLink from "@components/ExternalLink";
 import { Link } from "@utils/constants";
 
-export default function Footer(props: FooterProps) {
+export default function Footer() {
   return (
     <footer className="items-center px-4 pb-4 sm:p-4 sm:flex sm:flex-row-reverse sm:justify-between">
       <div className="grid-flow-col gap-2 md:place-self-center md:justify-self-end">
@@ -26,8 +26,4 @@ export default function Footer(props: FooterProps) {
       </div>
   </footer>
   )
-}
-
-type FooterProps = {
-  hidden?: boolean;
 }

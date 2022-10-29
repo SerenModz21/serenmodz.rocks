@@ -9,7 +9,3 @@
 .link-button {
   @apply transition-all ease-in-out hover:scale-110 hover:brightness-125;
 }
-
-.sm\:hide {
-  @apply hidden md:block;
-}
