@@ -10,7 +10,7 @@ export default function NotFound() {
     <Layout hideFooter>
       <NextSeo title="Page not found" />
       <div className="justify-center align-center text-center self-center flex flex-col">
-        <NextImage src={image} alt="404" />
+        <NextImage src={image} alt="404" priority />
 
       	<div className="text-5xl font-bold">404</div>
         <p className="text-2xl md:text-3xl font-light">Sorry, this page couldn&#39;t be found.</p>
