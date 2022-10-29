@@ -2,35 +2,20 @@ import NextImage from "next/image";
 import GithubCard from "@components/GithubCard";
 import Card from "@components/Card";
 import Layout from "@components/Layout";
-import { NowPlayingSong } from "@utils/types";
-import useSWR from "swr";
+
+import logo from "@public/logo.png";
 
 export default function Home() {
-  const { data } = useSWR<NowPlayingSong>("/api/now-playing");
-
   return (
     <Layout>
       {/* logo + content */}
       <div className="w-full px-4 sm:p-8 flex flex-col sm:flex-row justify-center align-center">
         {/* logo */}
         <div className="h-32 sm:h-40 w-32 sm:w-40 mb-2 sm:mb-0">
-          <NextImage src="/logo.png" alt="" height={160} width={160} className="rounded-full" layout="responsive" priority />
+          <NextImage src={logo} alt="" height={160} width={160} className="rounded-full" priority />
         </div>
         <div className="flex flex-col sm:pl-8">
           <h1 id="main" className="text-2xl font-bold">Seren_Modz 21</h1>
-          {data?.isPlaying && (
-            <p className="sm:max-w-md py-1 pr-2 sm:pr-0 text-gray-400">
-            Listening to{" "}
-            <a
-              href={data.songUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="capsize font-medium hover:underline"
-            >
-              {data.title} — {data.artist}
-            </a>
-          </p>
-          )}
           <p className="sm:max-w-md py-1 pr-2 sm:pr-0">
             Hello! My name is Seren_Modz 21, an inspired back-end developer.
             I&#39;m from the United Kingdom and I&#39;m a full-time college student.

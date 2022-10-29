@@ -16,8 +16,7 @@ export default function GithubCard(props: GithubCardProps) {
           "No description, website, or topics provided."}
       </p>
       <div className="card-actions justify-between">
-        <span className="text-sm text-gray-400">{props.language ?? ""}</span>
-        {/* <span className="text-sm text-gray-400">⭐ {props.stars ?? 0}</span> */}
+        <span className="text-sm font-light">{props.language ?? ""}</span>
       </div>
     </ExternalLink>
   </div>

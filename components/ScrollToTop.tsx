@@ -30,7 +30,7 @@ export default function ScrollToTop() {
     <button
       type="button"
       aria-label="Scroll to top"
-      className="hidden p-3 btn btn-circle bottom-5 right-10 fixed"
+      className="hidden p-3 btn btn-circle bottom-5 right-5 sm:right-10 fixed"
       ref={ref}
     >
       <FaArrowUp className="w-4 h-4 animate-bounce" />
