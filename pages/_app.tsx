@@ -7,7 +7,7 @@ import { ThemeProvider } from "next-themes";
 
 export default function MyApp({ Component, pageProps, router }: AppProps) {
   return (
-    <ThemeProvider>
+    <ThemeProvider nonce="qU/2pEbiqegEBqrNvN5zJQ==">
       <DefaultSeo {...nextSeo(router)} />
       <Component {...pageProps} />
       <ScrollToTop />
