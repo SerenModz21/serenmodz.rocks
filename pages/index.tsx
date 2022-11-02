@@ -9,25 +9,36 @@ export default function Home() {
   return (
     <Layout>
       {/* logo + content */}
-      <div className="w-full px-4 sm:p-8 flex flex-col sm:flex-row justify-center align-center">
+      <div className="align-center flex w-full flex-col justify-center px-4 sm:flex-row sm:p-8">
         {/* logo */}
-        <div className="h-32 sm:h-40 w-32 sm:w-40 mb-2 sm:mb-0">
-          <NextImage src={logo} alt="" height={160} width={160} className="rounded-full" priority />
+        <div className="mb-2 h-32 w-32 sm:mb-0 sm:h-40 sm:w-40">
+          <NextImage
+            src={logo}
+            alt=""
+            height={160}
+            width={160}
+            className="rounded-full"
+            priority
+          />
         </div>
         <div className="flex flex-col sm:pl-8">
-          <h1 id="main" className="text-2xl font-bold">Seren_Modz 21</h1>
-          <p className="sm:max-w-md py-1 pr-2 sm:pr-0">
+          <h1 id="main" className="text-2xl font-bold">
+            Seren_Modz 21
+          </h1>
+          <p className="py-1 pr-2 sm:max-w-md sm:pr-0">
             Hello! My name is Seren_Modz 21, an inspired back-end developer.
-            I&#39;m from the United Kingdom and I&#39;m a full-time college student.
-            Currently, I mainly work on private projects but I plan to grow
-            and achieve my goal of working on more open source projects.
+            I&#39;m from the United Kingdom and I&#39;m a full-time college
+            student. Currently, I mainly work on private projects but I plan to
+            grow and achieve my goal of working on more open source projects.
           </p>
         </div>
       </div>
 
       {/* projects */}
-      <div className="w-full pl-4 pr-8 sm:px-8 pb-8 pt-2 sm:pt-0">
-        <h2 id="projects" className="text-xl font-bold mb-4">Projects</h2>
+      <div className="w-full pl-4 pr-8 pb-8 pt-2 sm:px-8 sm:pt-0">
+        <h2 id="projects" className="mb-4 text-xl font-bold">
+          Projects
+        </h2>
         <div className="grid gap-4">
           <GithubCard
             name="paste.gg"
@@ -35,7 +46,7 @@ export default function Home() {
             url="https://github.com/SerenModz21/paste.gg"
             language="TypeScript"
           />
-         <GithubCard
+          <GithubCard
             name="serenmodz.rocks"
             description="My very own personal website, made using Next.js, TailwindCSS and TypeScript"
             url="https://github.com/SerenModz21/serenmodz.rocks"
@@ -65,8 +76,10 @@ export default function Home() {
       </div>
 
       {/* referrals */}
-      <div className="w-full pl-4 pr-8 sm:px-8 pb-8">
-        <h2 id="referrals" className="text-xl font-bold mb-4">Referrals</h2>
+      <div className="w-full pl-4 pr-8 pb-8 sm:px-8">
+        <h2 id="referrals" className="mb-4 text-xl font-bold">
+          Referrals
+        </h2>
         <div className="grid gap-4">
           <Card
             url="https://seren.link/oxide"

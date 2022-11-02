@@ -2,25 +2,26 @@ import ExternalLink from "./ExternalLink";
 
 export default function GithubCard(props: GithubCardProps) {
   return (
-    <div className="card w-full bg-base-100 shadow-xl transition-all ease-in-out hover:scale-105 hover:brightness-105 rounded-box">
-    <ExternalLink href={props.url} className="card-body">
-      <h2 className="card-title justify-between">
-        {props.name}
-        <div className="space-x-2">
-          {props.fork && <div className="badge badge-outline">fork</div>}
-          {props.archived && <div className="badge badge-outline">archived</div>}
+    <div className="card rounded-box w-full bg-base-100 shadow-xl transition-all ease-in-out hover:scale-105 hover:brightness-105">
+      <ExternalLink href={props.url} className="card-body">
+        <h2 className="card-title justify-between">
+          {props.name}
+          <div className="space-x-2">
+            {props.fork && <div className="badge-outline badge">fork</div>}
+            {props.archived && (
+              <div className="badge-outline badge">archived</div>
+            )}
+          </div>
+        </h2>
+        <p>
+          {props.description ?? "No description, website, or topics provided."}
+        </p>
+        <div className="card-actions justify-between">
+          <span className="text-sm font-light">{props.language ?? ""}</span>
         </div>
-      </h2>
-      <p>
-        {props.description ??
-          "No description, website, or topics provided."}
-      </p>
-      <div className="card-actions justify-between">
-        <span className="text-sm font-light">{props.language ?? ""}</span>
-      </div>
-    </ExternalLink>
-  </div>
-  )
+      </ExternalLink>
+    </div>
+  );
 }
 
 interface GithubCardProps {

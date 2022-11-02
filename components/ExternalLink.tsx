@@ -1,7 +1,7 @@
-import type { AnchorHTMLAttributes, RefAttributes } from "react"
-import Link, { LinkProps } from "next/link";
+import Link from "next/link";
+import { LinkProps } from "@utils/types";
 
-export default function ExternalLink(props: ExternalLinkProps) {
+export default function ExternalLink(props: LinkProps) {
   return (
     <Link
       target="_blank"
@@ -12,8 +12,3 @@ export default function ExternalLink(props: ExternalLinkProps) {
     </Link>
   );
 }
-
-export type ExternalLinkProps = 
-  Omit<AnchorHTMLAttributes<HTMLAnchorElement>, keyof LinkProps>
-  & LinkProps
-  & RefAttributes<HTMLAnchorElement>;

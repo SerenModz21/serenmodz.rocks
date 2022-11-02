@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 export default function Layout(props: LayoutProps) {
   return (
-    <div className="sm:max-w-2xl mx-0 sm:mx-auto">
+    <div className="mx-0 sm:mx-auto sm:max-w-2xl">
       {/* navbar */}
       <Navbar />
 
@@ -14,10 +14,10 @@ export default function Layout(props: LayoutProps) {
       {/* footer */}
       {!props.hideFooter && <Footer />}
     </div>
-  )
+  );
 }
 
 type LayoutProps = {
   children: ReactNode;
   hideFooter?: boolean;
-}
+};

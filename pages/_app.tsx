@@ -12,5 +12,5 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
       <Component {...pageProps} />
       <ScrollToTop />
     </ThemeProvider>
-  )
+  );
 }

@@ -18,10 +18,10 @@ export default function ScrollToTop() {
     <button
       type="button"
       aria-label="Scroll to top"
-      className="p-3 btn btn-circle bottom-5 right-5 sm:right-10 fixed"
+      className="btn-circle btn fixed bottom-5 right-5 p-3 sm:right-10"
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
     >
-      <FaArrowUp className="w-4 h-4 animate-bounce" />
+      <FaArrowUp className="h-4 w-4 animate-bounce" />
     </button>
-  )
+  );
 }
