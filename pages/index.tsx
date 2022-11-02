@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Layout>
       {/* logo + content */}
-      <div className="align-center flex w-full flex-col justify-center px-4 sm:flex-row sm:p-8">
+      <section className="align-center flex w-full flex-col justify-center px-4 sm:flex-row sm:p-8">
         {/* logo */}
         <div className="mb-2 h-32 w-32 sm:mb-0 sm:h-40 sm:w-40">
           <NextImage
@@ -32,10 +32,10 @@ export default function Home() {
             grow and achieve my goal of working on more open source projects.
           </p>
         </div>
-      </div>
+      </section>
 
       {/* projects */}
-      <div className="w-full pl-4 pr-8 pb-8 pt-2 sm:px-8 sm:pt-0">
+      <section className="w-full pl-4 pr-8 pb-8 pt-2 sm:px-8 sm:pt-0">
         <h2 id="projects" className="mb-4 text-xl font-bold">
           Projects
         </h2>
@@ -73,10 +73,10 @@ export default function Home() {
             archived
           />
         </div>
-      </div>
+      </section>
 
       {/* referrals */}
-      <div className="w-full pl-4 pr-8 pb-8 sm:px-8">
+      <section className="w-full pl-4 pr-8 pb-8 sm:px-8">
         <h2 id="referrals" className="mb-4 text-xl font-bold">
           Referrals
         </h2>
@@ -102,7 +102,7 @@ export default function Home() {
             description="Live a safer life online with Dashlane password manager: Store and fill in all your passwords, personal information, and payments."
           />
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }
