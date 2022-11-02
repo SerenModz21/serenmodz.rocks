@@ -6,7 +6,7 @@ const url = process.env.NEXT_PUBLIC_VERCEL_URL
  * @param {import("next/router").Router} router
  * @returns {import("next-seo").DefaultSeoProps}
  */
-const nextSeoConfig = (router) => ({
+module.exports = (router) => ({
   defaultTitle: "Seren_Modz 21",
   titleTemplate: "%s - Seren_Modz 21",
   canonical: `${url}${router.asPath}`,
@@ -29,5 +29,3 @@ const nextSeoConfig = (router) => ({
     site: "@SerenModz21",
   },
 });
-
-module.exports = nextSeoConfig;
