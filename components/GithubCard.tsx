@@ -6,17 +6,14 @@ export default function GithubCard(props: GithubCardProps) {
       <ExternalLink href={props.url} className="card-body">
         <h2 className="card-title justify-between">
           {props.name}
-          <div className="space-x-2">
-            {props.fork && <div className="badge-outline badge">fork</div>}
-            {props.archived && (
-              <div className="badge-outline badge">archived</div>
-            )}
-          </div>
+          {props.archived && (
+            <div className="badge-outline badge">archived</div>
+          )}
         </h2>
         <p>
           {props.description ?? "No description, website, or topics provided."}
         </p>
-        <div className="card-actions justify-between">
+        <div className="card-actions">
           <span className="text-sm font-light">{props.language ?? ""}</span>
         </div>
       </ExternalLink>
@@ -28,7 +25,6 @@ interface GithubCardProps {
   url: string;
   name: string;
   description?: string;
-  fork?: boolean;
   archived?: boolean;
   language?: string;
 }

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Layout>
       {/* logo + content */}
-      <section className="align-center flex w-full flex-col justify-center px-4 sm:flex-row sm:p-8">
+      <section className="align-center flex w-full flex-col justify-center px-4 pb-4 sm:flex-row sm:p-8">
         {/* logo */}
         <div className="mb-2 h-32 w-32 sm:mb-0 sm:h-40 sm:w-40">
           <NextImage
@@ -22,9 +22,7 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col sm:pl-8">
-          <h1 id="main" className="text-2xl font-bold">
-            Seren_Modz 21
-          </h1>
+          <h1 className="text-2xl font-bold">Seren_Modz 21</h1>
           <p className="py-1 pr-2 sm:max-w-md sm:pr-0">
             Hello! My name is Seren_Modz 21, an inspired back-end developer.
             I&#39;m from the United Kingdom and I&#39;m a full-time college
@@ -35,10 +33,8 @@ export default function Home() {
       </section>
 
       {/* projects */}
-      <section className="w-full pl-4 pr-8 pb-8 pt-2 sm:px-8 sm:pt-0">
-        <h2 id="projects" className="mb-4 text-xl font-bold">
-          Projects
-        </h2>
+      <section id="projects" className="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0">
+        <h2 className="mb-4 text-xl font-bold">Projects</h2>
         <div className="grid gap-4">
           <GithubCard
             name="paste.gg"
@@ -76,10 +72,8 @@ export default function Home() {
       </section>
 
       {/* referrals */}
-      <section className="w-full pl-4 pr-8 pb-8 sm:px-8">
-        <h2 id="referrals" className="mb-4 text-xl font-bold">
-          Referrals
-        </h2>
+      <section id="referrals" className="w-full px-4 pb-8 sm:px-8">
+        <h2 className="mb-4 text-xl font-bold">Referrals</h2>
         <div className="grid gap-4">
           <Card
             url="https://seren.link/oxide"
@@ -88,7 +82,7 @@ export default function Home() {
           />
           <Card
             url="https://seren.link/sneak"
-            name="Sneak Energy - 5 sachets worth (£/$/€)10 for free"
+            name="Sneak Energy - 5 sachets worth £10 for free"
             description="We're on a mission to inspire you to create. Our sugar-free energy formula is a different kind of energy drink, with natural colours and natural flavours."
           />
           <Card

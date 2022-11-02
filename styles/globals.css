@@ -5,7 +5,3 @@
 #__next {
   @apply bg-base-200;
 }
-
-.link-button {
-  @apply transition-all ease-in-out hover:scale-110 hover:brightness-125;
-}
