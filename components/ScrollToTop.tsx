@@ -1,37 +1,25 @@
-import { useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
 export default function ScrollToTop() {
-  const ref = useRef<HTMLButtonElement>(null);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const main = document.querySelector("#content");
-    if (!main || !ref.current) return;
-    const onScroll = () => {
-      const method = main.scrollTop > 0 ? "remove" : "add";
-      ref.current!.classList[method]("hidden");
-    }
-  
-    const onClick = () => {
-      main.scrollTo({ top: 0, behavior: "smooth" });
-    }
+    const onScroll = () => setVisible(document.documentElement.scrollTop > 0);
 
     onScroll();
-    main.addEventListener("scroll", onScroll);
-    ref.current.addEventListener("click", onClick);
-
-    return () => {
-      main.removeEventListener("scroll", onScroll);
-      ref.current?.removeEventListener("click", onClick);
-    }
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  if (!visible) return null;
 
   return (
     <button
       type="button"
       aria-label="Scroll to top"
-      className="hidden p-3 btn btn-circle bottom-5 right-5 sm:right-10 fixed"
-      ref={ref}
+      className="p-3 btn btn-circle bottom-5 right-5 sm:right-10 fixed"
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
     >
       <FaArrowUp className="w-4 h-4 animate-bounce" />
     </button>
