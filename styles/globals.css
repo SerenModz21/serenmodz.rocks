@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #__next {
-  @apply min-h-screen bg-base-200;
+  @apply bg-base-200;
 }
 
 .link-button {

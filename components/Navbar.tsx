@@ -1,9 +1,6 @@
 import NextLink from "next/link";
 import { useRouter } from "next/router";
-import { FaBars, FaTimes, FaCode, FaGithub, FaTwitter } from "react-icons/fa";
-import ExternalLink from "@components/ExternalLink";
 import { LinkProps } from "@utils/types";
-import { Link } from "@utils/constants";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {

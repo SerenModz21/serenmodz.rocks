@@ -12,7 +12,6 @@ export default function Layout(props: LayoutProps) {
       <main>{props.children}</main>
 
       {/* footer */}
-      {/* TODO: make new footer */}
       {!props.hideFooter && <Footer />}
     </div>
   )
