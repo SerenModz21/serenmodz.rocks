@@ -563,12 +563,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.12":
-  version: 10.4.12
-  resolution: "autoprefixer@npm:10.4.12"
+"autoprefixer@npm:^10.4.13":
+  version: 10.4.13
+  resolution: "autoprefixer@npm:10.4.13"
   dependencies:
     browserslist: ^4.21.4
-    caniuse-lite: ^1.0.30001407
+    caniuse-lite: ^1.0.30001426
     fraction.js: ^4.2.0
     normalize-range: ^0.1.2
     picocolors: ^1.0.0
@@ -577,7 +577,7 @@ __metadata:
     postcss: ^8.1.0
   bin:
     autoprefixer: bin/autoprefixer
-  checksum: 6ae79cbacd31fb3d464ec64eb6ad2600f4f689c3080bbe62c5536d539b41b472083a2e941ef99d14aa11142370d6c16e8b05a62f077374933ed991aceb5943d2
+  checksum: dcb1cb7ae96a3363d65d82e52f9a0a7d8c982256f6fd032d7e1ec311f099c23acfebfd517ff8e96bf93f716a66c4ea2b80c60aa19efd2f474ce434bd75ef7b79
   languageName: node
   linkType: hard
 
@@ -701,10 +701,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001400, caniuse-lite@npm:^1.0.30001406, caniuse-lite@npm:^1.0.30001407":
+"caniuse-lite@npm:^1.0.30001400, caniuse-lite@npm:^1.0.30001406":
   version: 1.0.30001423
   resolution: "caniuse-lite@npm:1.0.30001423"
   checksum: fe443f323f5dc6a858ef7d7deddb93db5e5f9a35e22970c4a65c4ef793bb696c1e2f038df572722d9edf29021e43ed16f5131faafde783563bd0d9eccf486592
+  languageName: node
+  linkType: hard
+
+"caniuse-lite@npm:^1.0.30001426":
+  version: 1.0.30001429
+  resolution: "caniuse-lite@npm:1.0.30001429"
+  checksum: d1658080248ef5ef0f5157423b2766026e6aa45642ce3b2cc74859b6a54e39881dd902397a2368324ed30ed0cd40250f11a4a4f3773453cd57b88db5e5e5c76a
   languageName: node
   linkType: hard
 
@@ -861,9 +868,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^2.33.0":
-  version: 2.33.0
-  resolution: "daisyui@npm:2.33.0"
+"daisyui@npm:^2.38.0":
+  version: 2.38.0
+  resolution: "daisyui@npm:2.38.0"
   dependencies:
     color: ^4.2
     css-selector-tokenizer: ^0.8.0
@@ -872,7 +879,7 @@ __metadata:
   peerDependencies:
     autoprefixer: ^10.0.2
     postcss: ^8.1.6
-  checksum: 29c1b1ee674eae216d8a846fcb8f05a87ae186da34b6f8d921307d10a4fb73d6c9c6395f5eafe02a270bdf1c0925e032bbc787bb829bda74b2f020ecd4cca9a3
+  checksum: ea112101a8a19a339a0a84c8bb1a12a3ad2b6679b512687e678c43e07aa8a69c8920ad1171623ed30dcf0602c336c38986536638834d386b6bd9b3e21b75949d
   languageName: node
   linkType: hard
 
@@ -2361,14 +2368,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-seo@npm:^5.8.0":
-  version: 5.8.0
-  resolution: "next-seo@npm:5.8.0"
+"next-seo@npm:^5.13.0":
+  version: 5.13.0
+  resolution: "next-seo@npm:5.13.0"
   peerDependencies:
     next: ^8.1.1-canary.54 || >=9.0.0
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: 203288a44beba6dbc8218fc638675c48e4b3e807cc867f3274cc2af90fbfce9955f3b0c1a87a4f91bff7a287ed8184af8a33b52f0314d12ff940a882eb81d7aa
+  checksum: f566dfe6bafa18953789fc7bb0f466432c64121a80bc40e32a82d3d4e5d8cc16cc217ca5f6a4bf088f530b263d97cb6e6b237b7bdb6ffcfa16d01008d007a291
   languageName: node
   linkType: hard
 
@@ -3124,13 +3131,13 @@ __metadata:
   dependencies:
     "@types/node": 18.11.9
     "@types/react": 18.0.24
-    autoprefixer: ^10.4.12
-    daisyui: ^2.33.0
+    autoprefixer: ^10.4.13
+    daisyui: ^2.38.0
     eslint: 8.26.0
     eslint-config-next: 13.0.1
     eslint-config-prettier: ^8.5.0
     next: 13.0.1
-    next-seo: ^5.8.0
+    next-seo: ^5.13.0
     next-themes: ^0.2.1
     postcss: ^8.4.18
     prettier: ^2.7.1
