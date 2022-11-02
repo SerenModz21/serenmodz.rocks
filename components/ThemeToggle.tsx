@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { FaSun, FaMoon, FaSpinner } from "react-icons/fa";
 import { useTheme } from "next-themes";
 
 export default function ThemeToggle() {
@@ -14,17 +14,20 @@ export default function ThemeToggle() {
   return (
     <button
       type="button"
-      aria-label={`Switch to ${text} mode`}
-      title={`Switch to ${text} mode`}
+      aria-label={mounted ? `Switch to ${text} mode` : "Loading..."}
+      title={mounted ? `Switch to ${text} mode` : "Loading..."}
       className="btn-ghost btn-circle btn"
       onClick={() => setTheme(text.toLowerCase())}
     >
-      {mounted &&
-        (resolvedTheme === "dark" ? (
+      {mounted ? (
+        resolvedTheme === "dark" ? (
           <FaSun className="h-6 w-6" />
         ) : (
           <FaMoon className="h-6 w-6" />
-        ))}
+        )
+      ) : (
+        <FaSpinner className="h-6 w-6 animate-spin" />
+      )}
     </button>
   );
 }
