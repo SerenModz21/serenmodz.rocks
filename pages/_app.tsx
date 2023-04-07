@@ -6,11 +6,11 @@ import ScrollToTop from "@components/ScrollToTop";
 import { ThemeProvider } from "next-themes";
 
 export default function MyApp({ Component, pageProps, router }: AppProps) {
-  return (
-    <ThemeProvider nonce="qU/2pEbiqegEBqrNvN5zJQ==">
-      <DefaultSeo {...nextSeo(router)} />
-      <Component {...pageProps} />
-      <ScrollToTop />
-    </ThemeProvider>
-  );
+    return (
+        <ThemeProvider nonce="qU/2pEbiqegEBqrNvN5zJQ==">
+            <DefaultSeo {...nextSeo(router)} />
+            <Component {...pageProps} />
+            <ScrollToTop />
+        </ThemeProvider>
+    );
 }

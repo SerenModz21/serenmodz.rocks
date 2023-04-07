@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 #__next {
-  @apply bg-base-200;
+    @apply bg-base-200;
 }
