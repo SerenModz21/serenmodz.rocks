@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
@@ -19,7 +21,7 @@ export default function ScrollToTop() {
         <button
             type="button"
             aria-label="Scroll to top"
-            className="btn-circle btn fixed bottom-5 right-5 p-3 sm:right-10"
+            className="btn-circle btn fixed bottom-5 right-5"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
             <FaArrowUp className="h-4 w-4 animate-bounce" />

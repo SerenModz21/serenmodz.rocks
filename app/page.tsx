@@ -1,20 +1,19 @@
 import NextImage from "next/image";
+
 import GithubCard from "@components/GithubCard";
 import Card from "@components/Card";
-import Layout from "@components/Layout";
-
 import logo from "@public/logo.png";
 
 export default function Home() {
     return (
-        <Layout>
+        <>
             {/* logo + content */}
             <section className="align-center flex w-full flex-col justify-center px-4 pb-4 sm:flex-row sm:p-8">
                 {/* logo */}
                 <div className="mb-2 h-32 w-32 sm:mb-0 sm:h-40 sm:w-40">
                     <NextImage
                         src={logo}
-                        alt=""
+                        alt="logo"
                         height={160}
                         width={160}
                         className="rounded-full"
@@ -39,7 +38,7 @@ export default function Home() {
                 className="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0"
             >
                 <h2 className="mb-4 text-xl font-bold">Projects</h2>
-                <div className="grid gap-4">
+                <div className="grid sm:grid-cols-2 gap-4">
                     <GithubCard
                         name="paste.gg"
                         description="An easy-to-use library for interacting with the Paste.GG API."
@@ -57,6 +56,12 @@ export default function Home() {
                         description="A Discord to Minecraft bridge for Kings MC"
                         url="https://github.com/Kings-World/fabric-mod"
                         language="Java"
+                    />
+                    <GithubCard
+                        name="cdn-worker"
+                        description="A simple CDN made using Cloudflare Workers and Hono"
+                        url="https://github.com/SerenModz21/cdn-worker"
+                        language="TypeScript"
                     />
                     <GithubCard
                         name="deck.js"
@@ -101,6 +106,6 @@ export default function Home() {
                     />
                 </div>
             </section>
-        </Layout>
-    );
+        </>
+    )
 }

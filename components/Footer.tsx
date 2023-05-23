@@ -33,8 +33,8 @@ export default function Footer() {
                     <FaCode className="h-6 w-6" />
                 </ExternalLink>
             </div>
-            <div className="items-center pl-2 sm:pl-0">
-                <span>Copyright © 2022 - All right reserved</span>
+            <div className="items-center pl-2 md:pl-0">
+                <span>Copyright © {new Date().getFullYear()} - All right reserved</span>
             </div>
         </footer>
     );

@@ -1,6 +1,4 @@
 import NextLink from "next/link";
-import { useRouter } from "next/router";
-import { LinkProps } from "@utils/types";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
@@ -10,13 +8,13 @@ export default function Navbar() {
             <nav className="align-center flex text-lg">
                 <ul className="menu menu-horizontal">
                     <li>
-                        <NavLink href="/">Home</NavLink>
+                        <NextLink href="/">Home</NextLink>
                     </li>
                     <li>
-                        <NavLink href="/#projects">Projects</NavLink>
+                        <NextLink href="/#projects">Projects</NextLink>
                     </li>
                     <li>
-                        <NavLink href="/#referrals">Referrals</NavLink>
+                        <NextLink href="/#referrals">Referrals</NextLink>
                     </li>
                 </ul>
             </nav>
@@ -27,9 +25,3 @@ export default function Navbar() {
     );
 }
 
-export function NavLink(props: LinkProps) {
-    const router = useRouter();
-    const isActive = router.asPath === props.href;
-
-    return <NextLink className={isActive ? "font-medium" : ""} {...props} />;
-}

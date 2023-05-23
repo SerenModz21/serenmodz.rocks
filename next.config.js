@@ -14,7 +14,7 @@ module.exports = {
 
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' 'nonce-qU/2pEbiqegEBqrNvN5zJQ==';
+  script-src 'self' 'unsafe-eval' 'unsafe-inline';
   img-src * 'self' blob: data:;
   style-src 'self' 'unsafe-inline';
   font-src 'self';

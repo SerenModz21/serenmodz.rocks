@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import { FaSun, FaMoon, FaSpinner } from "react-icons/fa";
 import { useTheme } from "next-themes";
