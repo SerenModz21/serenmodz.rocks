@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         title,
-        description
+        description,
     },
     twitter: {
         card: "summary",
@@ -32,12 +32,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className="mx-0 sm:mx-auto sm:max-w-2xl">
+            <body className="mx-0 sm:mx-auto sm:max-w-3xl">
                 <Providers>
                     <Navbar />
-                    {children}
+                    <main>
+                        {children}
+                        <ScrollToTop />
+                    </main>
                     <Footer />
-                    <ScrollToTop />
                 </Providers>
             </body>
         </html>

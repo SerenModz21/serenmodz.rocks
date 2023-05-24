@@ -20,9 +20,9 @@ export default function Home() {
                         priority
                     />
                 </div>
-                <div className="flex flex-col sm:pl-8">
+                <div className="flex flex-col sm:pl-8 pt-2">
                     <h1 className="text-2xl font-bold">Seren_Modz 21</h1>
-                    <p className="py-1 pr-2 sm:max-w-md sm:pr-0">
+                    <p className="py-2 pr-2 sm:max-w-lg sm:pr-0">
                         Hello! My name is Seren_Modz 21, an inspired back-end
                         developer. I&#39;m from the United Kingdom and I&#39;m a
                         full-time college student. Currently, I mainly work on
@@ -38,7 +38,7 @@ export default function Home() {
                 className="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0"
             >
                 <h2 className="mb-4 text-xl font-bold">Projects</h2>
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-3 gap-4">
                     <GithubCard
                         name="paste.gg"
                         description="An easy-to-use library for interacting with the Paste.GG API."
@@ -83,7 +83,7 @@ export default function Home() {
             {/* referrals */}
             <section id="referrals" className="w-full px-4 pb-8 sm:px-8">
                 <h2 className="mb-4 text-xl font-bold">Referrals</h2>
-                <div className="grid gap-4">
+                <div className="grid sm:grid-cols-2 gap-4">
                     <Card
                         url="https://seren.link/oxide"
                         name="Oxide Hosting - affordable and reliable hosting"
