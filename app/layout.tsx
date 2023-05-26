@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className="mx-0 sm:mx-auto sm:max-w-3xl">
+            <body className="mx-0 sm:mx-auto sm:max-w-3xl min-h-screen grid grid-rows-[auto_1fr_auto]">
                 <Providers>
                     <Navbar />
                     <main>
