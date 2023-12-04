@@ -19,7 +19,7 @@
     },
     "devDependencies": {
         "@types/node": "18.19.2",
-        "@types/react": "18.2.41",
+        "@types/react": "18.2.42",
         "autoprefixer": "^10.4.14",
         "eslint": "8.55.0",
         "eslint-config-next": "13.5.6",
