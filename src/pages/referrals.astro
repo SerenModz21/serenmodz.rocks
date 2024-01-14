@@ -1,0 +1,33 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import ReferralCard from "../components/ReferralCard.astro";
+---
+
+<PageLayout title="Referrals">
+    <main class="flex flex-col my-2 space-y-4 mx-4">
+        <ReferralCard
+            url="https://seren.link/oxide"
+            name="Oxide Hosting - affordable and reliable hosting"
+            description="We currently provide consumers both reliable and high quality Virtual Servers (VPS), Game Hosting, Website Hosting, Discord Bot Hosting and Domains at affordable prices."
+            image="/oxide.png"
+        />
+        <ReferralCard
+            url="https://seren.link/sneak"
+            name="Sneak Energy - 5 sachets worth £10 for free"
+            description="We're on a mission to inspire you to create. Our sugar-free energy formula is a different kind of energy drink, with natural colours and natural flavours."
+            image="/sneak.png"
+        />
+        <ReferralCard
+            url="https://seren.link/digitalocean"
+            name="DigitalOcean - $200, 60-day credit for new users"
+            description="Helping millions of developers easily build, test, manage, and scale applications of any size – faster than ever before."
+            image="/digitalocean.png"
+        />
+        <ReferralCard
+            url="https://seren.link/dashlane"
+            name="Dashlane - claim your 6 months of premium"
+            description="Live a safer life online with Dashlane password manager: Store and fill in all your passwords, personal information, and payments."
+            image="/dashlane.png"
+        />
+    </main>
+</PageLayout>

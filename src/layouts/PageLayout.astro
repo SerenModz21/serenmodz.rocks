@@ -1,0 +1,69 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { ThemeToggle } from "../components/ThemeToggle";
+import { Separator } from "../components/ui/separator";
+import { Button } from "../components/ui/button";
+import { GitHubLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<Layout title={title} description={description}>
+    <div
+        class="flex flex-col items-center justify-center min-h-screen lg:h-screen lg:min-w-max lg:max-w-screen-xl lg:mx-auto"
+    >
+        <div class="mt-4 w-full">
+            <div class="flex flex-col sm:flex-row justify-between mx-4">
+                <nav class="space-x-4">
+                    <Button variant="ghost">
+                        <a href="/">Home</a>
+                    </Button>
+                    <Button variant="ghost">
+                        <a href="/projects">Projects</a>
+                    </Button>
+                    <Button variant="ghost">
+                        <a href="/referrals">Referrals</a>
+                    </Button>
+                </nav>
+                <div class="space-x-4 flex flex-row mt-4 sm:mt-0">
+                    <ThemeToggle
+                        iconClass="size-4"
+                        buttonVaiant="ghost"
+                        client:load
+                    />
+                    <div class="space-x-1">
+                        <Button variant="ghost">
+                            <a
+                                href="https://github.com/SerenModz21"
+                                target="_blank"
+                            >
+                                <GitHubLogoIcon className="size-4" />
+                                <span class="sr-only">GitHub</span>
+                            </a>
+                        </Button>
+                        <Button variant="ghost">
+                            <a
+                                href="https://twitter.com/SerenModz21"
+                                target="_blank"
+                            >
+                                <TwitterLogoIcon className="size-4" />
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </Button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <Separator className="my-4" />
+
+        <div class="size-full">
+            <slot />
+        </div>
+    </div>
+</Layout>
