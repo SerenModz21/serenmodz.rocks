@@ -1,0 +1,73 @@
+---
+import { fetchUserRepos } from '../lib/github';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Button } from "./ui/button";
+import { Circle, Scale, Star, GitFork } from "lucide-react";
+import { Badge } from "./ui/badge";
+import { cn } from "../lib/utils";
+
+interface Props {
+	repo: Awaited<ReturnType<typeof fetchUserRepos>>[number];
+    className?: string;
+}
+
+const { repo, className } = Astro.props;
+
+// https://github.com/ozh/github-colors/blob/master/colors.json
+const languageColours: Record<string, string> = {
+    "JavaScript": "#f1e05a",
+    "TypeScript": "#3178c6",
+    "Java": "#b07219",
+    "Kotlin": "#A97BFF"
+}
+
+const repoLanguageColour = repo.language ? languageColours[repo.language] : null;
+---
+
+<Card>
+    <CardHeader className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0">
+        <div class="space-y-2">
+            <CardTitle className="items-center flex">
+                <a href={repo.html_url} class="hover:underline">{repo.name}</a>
+                {repo.archived && (<Badge variant="destructive" className="mx-4">Archived</Badge>)}
+            </CardTitle>
+            <CardDescription className="lg:w-44 lg:h-16">{repo.description}</CardDescription>
+        </div>
+        <div class="flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground ml-4 lg:ml-8">
+            <Button variant="secondary" className="px-3 shadow-none">
+                <a href={repo.html_url} class="flex items-center">
+                    <Star className="mr-3 size-4" />
+                    <span>Star</span>
+                </a>
+            </Button>
+        </div>
+    </CardHeader>
+    <CardContent>
+        <div class="flex space-x-4 text-sm text-muted-foreground">
+            {repo.language && (
+                <div class="flex items-center" title="Language">
+                    {repoLanguageColour && (
+                        <Circle className="mr-1 size-3" style={{ color: repoLanguageColour, fill: repoLanguageColour }} />
+                    )}
+                    <a target="_blank" href={`https://github.com/trending?l=${repo.language}`}>{repo.language}</a>
+                </div>
+            )}
+            <div class="flex items-center" title="Stars">
+                <Star className="mr-1 size-3" />
+                {repo.stargazers_count}
+                <span class="sr-only">Stars</span>
+            </div>
+            <div class="flex items-center" title="Forks">
+                <GitFork className="mr-1 size-3" />
+                {repo.forks_count}
+                <span class="sr-only">Forks</span>
+            </div>
+            {repo.license && (
+                <div class="flex items-center" title="License">
+                    <Scale className="mr-1 size-3" />
+                    {repo.license.name}
+                </div>
+            )}
+        </div>
+    </CardContent>
+</Card>
