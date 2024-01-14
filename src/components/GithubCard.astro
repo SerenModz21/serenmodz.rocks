@@ -4,14 +4,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 import { Button } from "./ui/button";
 import { Circle, Scale, Star, GitFork } from "lucide-react";
 import { Badge } from "./ui/badge";
-import { cn } from "../lib/utils";
 
 interface Props {
 	repo: Awaited<ReturnType<typeof fetchUserRepos>>[number];
-    className?: string;
 }
 
-const { repo, className } = Astro.props;
+const { repo } = Astro.props;
 
 // https://github.com/ozh/github-colors/blob/master/colors.json
 const languageColours: Record<string, string> = {
