@@ -6,10 +6,10 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.serenmodz.rocks",
-  integrations: [
-    react(),
-    tailwind({ applyBaseStyles: false }),
-    sitemap({ lastmod: new Date() })
-  ]
+    site: "https://www.serenmodz.rocks",
+    integrations: [
+        react(),
+        tailwind({ applyBaseStyles: false }),
+        sitemap({ lastmod: new Date() })
+    ]
 });

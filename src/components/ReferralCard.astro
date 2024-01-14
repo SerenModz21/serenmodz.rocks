@@ -1,9 +1,15 @@
 ---
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+} from "./ui/card";
 import { Button } from "./ui/button";
 
 interface Props {
-	url: string;
+    url: string;
     name: string;
     description: string;
     image?: string;
@@ -13,7 +19,17 @@ const { url, name, description, image } = Astro.props;
 ---
 
 <Card className="flex flex-col sm:flex-row">
-    {image && <img src={image} alt={name} height="60" width="60" class="object-contain ml-4 mt-4 sm:mt-0 sm:ml-8" />}
+    {
+        image && (
+            <img
+                src={image}
+                alt={name}
+                height="60"
+                width="60"
+                class="object-contain ml-4 mt-4 sm:mt-0 sm:ml-8"
+            />
+        )
+    }
 
     <div class="flex-col w-full">
         <CardHeader>
@@ -26,5 +42,4 @@ const { url, name, description, image } = Astro.props;
             </Button>
         </CardContent>
     </div>
-    
 </Card>

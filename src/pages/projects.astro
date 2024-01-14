@@ -14,21 +14,25 @@ const mixtapeRepos = await fetchOrgRepos("mixtape-bot");
         <section class="lg:w-fit my-2">
             <h2 class="text-2xl font-semibold mb-4">Personal</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-2 mb-2">
-                {personalRepos.map((r) => (<GithubCard repo={r} />))}
+                {personalRepos.map((r) => <GithubCard repo={r} />)}
             </div>
         </section>
 
         <section class="lg:w-fit my-2">
             <h2 class="text-2xl font-semibold mb-4">Kings World</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-2 mb-2">
-                {kingsWorldRepos.map((r) => (<GithubCard repo={r} />))}
+                {kingsWorldRepos.map((r) => <GithubCard repo={r} />)}
             </div>
         </section>
 
         <section class="lg:w-fit my-2">
             <h2 class="text-2xl font-semibold mb-4">Mixtape</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-2 mb-2">
-                {mixtapeRepos.filter(r => ["deck.js", "rpc"].includes(r.name)).map((r) => (<GithubCard repo={r} />))}
+                {
+                    mixtapeRepos
+                        .filter((r) => ["deck.js", "rpc"].includes(r.name))
+                        .map((r) => <GithubCard repo={r} />)
+                }
             </div>
         </section>
     </main>
