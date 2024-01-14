@@ -4,7 +4,6 @@ interface Props {
 	description?: string;
 }
 
-import TailwindIndicator from "../components/TailwindIndicator.astro";
 import "../styles/globals.css";
 
 const { title, description } = Astro.props;
@@ -13,8 +12,6 @@ const logoURL = new URL("/logo.png", Astro.url);
 
 const parsedTitle = title ? `${title} - Seren_Modz 21` : "Seren_Modz 21";
 const parsedDescription = description ?? "Welcome to Seren Modz's personal site! Here, you can find information about him, his projects, and more!";
-
-const isProduction = process.env.NODE_ENV === "production";
 ---
 
 <script is:inline>
@@ -64,7 +61,5 @@ const isProduction = process.env.NODE_ENV === "production";
 	</head>
 	<body class="bg-gray-50 dark:bg-gray-900">
 		<slot />
-		<TailwindIndicator />
-		{!isProduction && <TailwindIndicator />}
 	</body>
 </html>
