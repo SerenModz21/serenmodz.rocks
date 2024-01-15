@@ -15,10 +15,10 @@ const { title, description } = Astro.props;
 
 <Layout title={title} description={description}>
     <div
-        class="flex flex-col items-center justify-center min-h-screen min-w-fit lg:h-screen lg:max-w-screen-xl lg:mx-auto"
+        class="flex min-h-screen min-w-fit flex-col items-center justify-center lg:mx-auto lg:h-screen lg:max-w-screen-xl"
     >
         <div class="mt-4 w-full">
-            <div class="flex flex-col sm:flex-row justify-between mx-4">
+            <div class="mx-4 flex flex-col justify-between sm:flex-row">
                 <nav class="space-x-4">
                     <Button variant="ghost">
                         <a href="/">Home</a>
@@ -30,7 +30,7 @@ const { title, description } = Astro.props;
                         <a href="/referrals">Referrals</a>
                     </Button>
                 </nav>
-                <div class="space-x-4 flex flex-row mt-4 sm:mt-0">
+                <div class="mt-4 flex flex-row space-x-4 sm:mt-0">
                     <ThemeToggle
                         iconClass="size-4"
                         buttonVaiant="ghost"

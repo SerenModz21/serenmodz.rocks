@@ -26,12 +26,12 @@ const { url, name, description, image } = Astro.props;
                 alt={name}
                 height="60"
                 width="60"
-                class="object-contain ml-4 mt-4 sm:mt-0 sm:ml-8"
+                class="ml-4 mt-4 object-contain sm:ml-8 sm:mt-0"
             />
         )
     }
 
-    <div class="flex-col w-full">
+    <div class="w-full flex-col">
         <CardHeader>
             <CardTitle>{name}</CardTitle>
         </CardHeader>

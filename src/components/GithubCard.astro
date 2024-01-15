@@ -23,7 +23,7 @@ const languageColours: Record<string, string> = {
     TypeScript: "#3178c6",
     Java: "#b07219",
     Kotlin: "#A97BFF",
-    Astro: "#ff5a03"
+    Astro: "#ff5a03",
 };
 
 const repoLanguageColour = repo.language
@@ -36,7 +36,7 @@ const repoLanguageColour = repo.language
         className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0"
     >
         <div class="space-y-2">
-            <CardTitle className="items-center flex">
+            <CardTitle className="flex items-center">
                 <a href={repo.html_url} class="hover:underline">{repo.name}</a>
                 {
                     repo.archived && (
@@ -46,12 +46,12 @@ const repoLanguageColour = repo.language
                     )
                 }
             </CardTitle>
-            <CardDescription className="lg:w-44 lg:h-16">
+            <CardDescription className="lg:h-16 lg:w-44">
                 {repo.description}
             </CardDescription>
         </div>
         <div
-            class="flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground ml-4 lg:ml-8"
+            class="ml-4 flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground lg:ml-8"
         >
             <Button variant="secondary" className="px-3 shadow-none">
                 <a href={repo.html_url} class="flex items-center">
