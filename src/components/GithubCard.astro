@@ -37,7 +37,7 @@ const repoLanguageColour = repo.language
     >
         <div class="space-y-2">
             <CardTitle className="flex items-center">
-                <a href={repo.html_url} class="hover:underline">{repo.name}</a>
+                <a href={repo.html_url} class="hover:underline" target="_blank">{repo.name}</a>
                 {
                     repo.archived && (
                         <Badge variant="destructive" className="mx-4">
@@ -54,7 +54,7 @@ const repoLanguageColour = repo.language
             class="ml-4 flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground lg:ml-8"
         >
             <Button variant="secondary" className="px-3 shadow-none">
-                <a href={repo.html_url} class="flex items-center">
+                <a href={repo.html_url} class="flex items-center" target="_blank">
                     <Star className="mr-3 size-4" />
                     <span>Star</span>
                 </a>
