@@ -7,23 +7,25 @@ import {
     CardTitle,
 } from "./ui/card";
 import { Button } from "./ui/button";
+import { Image } from "astro:assets";
 
 interface Props {
     url: string;
     name: string;
     description: string;
-    image?: string;
+    image?: ImageMetadata;
 }
 
 const { url, name, description, image } = Astro.props;
+const [company] = name.split(" - ");
 ---
 
 <Card className="flex flex-col sm:flex-row">
     {
         image && (
-            <img
+            <Image
                 src={image}
-                alt={name}
+                alt={`${company} Logo`}
                 height="60"
                 width="60"
                 class="ml-4 mt-4 object-contain sm:ml-8 sm:mt-0"

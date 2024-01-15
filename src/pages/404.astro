@@ -1,5 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import cat from "../assets/404.svg";
 ---
 
 <Layout
@@ -10,8 +13,9 @@ import Layout from "../layouts/Layout.astro";
         class="flex min-h-screen flex-col items-center justify-center bg-gray-50 dark:bg-gray-900"
     >
         <div class="flex flex-col items-center justify-center space-y-6">
-            <img
-                src="/404.svg"
+            <Image
+                src={cat}
+                alt="404"
                 height="400"
                 width="400"
                 style="aspect-ratio: 100 / 100; object-fit: cover;"

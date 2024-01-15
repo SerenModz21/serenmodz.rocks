@@ -1,6 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { ThemeToggle } from "../components/ThemeToggle";
+import { Image } from "astro:assets";
+
+// i still want /logo.png to be accessable from the root of the siteyarn
+import logo from "../../public/logo.png";
 ---
 
 <Layout>
@@ -8,13 +12,14 @@ import { ThemeToggle } from "../components/ThemeToggle";
         class="mx-4 flex min-h-screen flex-col items-center justify-center bg-gray-50 dark:bg-gray-900"
     >
         <div class="flex flex-col items-center justify-center space-y-6">
-            <img
-                src="/logo.png"
+            <Image
+                src={logo}
                 width="150"
                 height="150"
-                alt="Logo"
+                alt="Seren_Modz 21 Logo"
                 class="rounded-full object-contain object-center"
                 style="aspect-ratio: 100 / 100; object-fit: cover;"
+                loading="eager"
             />
             <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100">
                 Seren_Modz 21
