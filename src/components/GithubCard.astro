@@ -35,9 +35,9 @@ const repoLanguageColour = repo.language
     <CardHeader className="grid grid-cols-[1fr_5rem] items-start space-y-0">
         <div class="space-y-2">
             <CardTitle className="flex shrink items-center truncate text-xl">
-                <a href={repo.html_url} class="hover:underline" target="_blank"
-                    >{repo.name}</a
-                >
+                <a href={repo.html_url} class="hover:underline" target="_blank">
+                    {repo.name}
+                </a>
                 {
                     repo.archived && (
                         <Badge variant="destructive" className="mx-4">
