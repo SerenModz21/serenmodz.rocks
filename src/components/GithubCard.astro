@@ -32,12 +32,12 @@ const repoLanguageColour = repo.language
 ---
 
 <Card>
-    <CardHeader
-        className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0"
-    >
+    <CardHeader className="grid grid-cols-[1fr_5rem] items-start space-y-0">
         <div class="space-y-2">
-            <CardTitle className="flex items-center">
-                <a href={repo.html_url} class="hover:underline" target="_blank">{repo.name}</a>
+            <CardTitle className="flex shrink items-center truncate text-xl">
+                <a href={repo.html_url} class="hover:underline" target="_blank"
+                    >{repo.name}</a
+                >
                 {
                     repo.archived && (
                         <Badge variant="destructive" className="mx-4">
@@ -46,15 +46,19 @@ const repoLanguageColour = repo.language
                     )
                 }
             </CardTitle>
-            <CardDescription className="lg:h-16 lg:w-44">
+            <CardDescription className="mr-1 h-14 lg:min-h-10">
                 {repo.description}
             </CardDescription>
         </div>
         <div
-            class="ml-4 flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground lg:ml-8"
+            class="flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground"
         >
             <Button variant="secondary" className="px-3 shadow-none">
-                <a href={repo.html_url} class="flex items-center" target="_blank">
+                <a
+                    href={repo.html_url}
+                    class="flex items-center"
+                    target="_blank"
+                >
                     <Star className="mr-3 size-4" />
                     <span>Star</span>
                 </a>
@@ -96,7 +100,7 @@ const repoLanguageColour = repo.language
             </div>
             {
                 repo.license && (
-                    <div class="flex items-center" title="License">
+                    <div class="flex items-center truncate" title="License">
                         <Scale className="mr-1 size-3" />
                         {repo.license.name}
                     </div>

@@ -9,9 +9,7 @@ import cat from "../assets/404.svg";
     title="Page not found"
     description="Sorry, this page couldn't be found."
 >
-    <main
-        class="flex min-h-screen flex-col items-center justify-center bg-gray-50 dark:bg-gray-900"
-    >
+    <main class="flex flex-col items-center justify-center">
         <div class="flex flex-col items-center justify-center space-y-6">
             <Image
                 src={cat}
@@ -19,6 +17,7 @@ import cat from "../assets/404.svg";
                 height="400"
                 width="400"
                 style="aspect-ratio: 100 / 100; object-fit: cover;"
+                loading="eager"
             />
             <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100">
                 404

@@ -1,6 +1,6 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
-import GithubCard from "../components/GithubCard.astro";
+import ProjectSection from "../components/ProjectSection.astro";
 
 import { fetchUserRepos, fetchOrgRepos } from "../lib/github";
 
@@ -10,30 +10,10 @@ const mixtapeRepos = await fetchOrgRepos("mixtape-bot");
 ---
 
 <PageLayout title="Projects">
-    <main class="mx-4 my-2 flex flex-col">
-        <section class="my-2 lg:w-fit">
-            <h2 class="mb-4 text-2xl font-semibold">Personal</h2>
-            <div class="mb-2 grid gap-2 md:grid-cols-2 lg:grid-cols-3">
-                {personalRepos.map((r) => <GithubCard repo={r} />)}
-            </div>
-        </section>
-
-        <section class="my-2 lg:w-fit">
-            <h2 class="mb-4 text-2xl font-semibold">Kings World</h2>
-            <div class="mb-2 grid gap-2 md:grid-cols-2 lg:grid-cols-3">
-                {kingsWorldRepos.map((r) => <GithubCard repo={r} />)}
-            </div>
-        </section>
-
-        <section class="my-2 lg:w-fit">
-            <h2 class="mb-4 text-2xl font-semibold">Mixtape</h2>
-            <div class="mb-2 grid gap-2 md:grid-cols-2 lg:grid-cols-3">
-                {
-                    mixtapeRepos
-                        .filter((r) => ["deck.js", "rpc"].includes(r.name))
-                        .map((r) => <GithubCard repo={r} />)
-                }
-            </div>
-        </section>
-    </main>
+    <ProjectSection name="Personal" repos={personalRepos} />
+    <ProjectSection name="Kings World" repos={kingsWorldRepos} />
+    <ProjectSection
+        name="Mixtape"
+        repos={mixtapeRepos.filter((r) => ["deck.js", "rpc"].includes(r.name))}
+    />
 </PageLayout>
