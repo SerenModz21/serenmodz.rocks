@@ -57,7 +57,6 @@ const parsedDescription =
 
     // https://docs.astro.build/en/guides/view-transitions/#astrobefore-swap
     document.addEventListener("astro:before-swap", ({ newDocument }) => {
-        console.log("astro:before-swap", newDocument.documentElement.classList);
         updateTheme(newDocument);
     });
 
