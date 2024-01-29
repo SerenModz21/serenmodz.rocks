@@ -3,12 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { Image } from "astro:assets";
 
-// i still want /logo.png to be accessable from the root of the siteyarn
+// i still want /logo.png to be accessable from the root of the site
 import logo from "../../public/logo.png";
 ---
 
 <Layout>
-    <main class="mx-4 flex min-h-screen flex-col items-center justify-center">
+    <!-- <main class="mx-4 flex min-h-screen flex-col items-center justify-center"> -->
+    <main class="flex min-h-screen justify-center">
         <div class="flex flex-col items-center justify-center space-y-6">
             <Image
                 src={logo}
