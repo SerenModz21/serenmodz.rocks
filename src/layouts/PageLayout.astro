@@ -3,7 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { Separator } from "../components/ui/separator";
 import { Button } from "../components/ui/button";
-import { GitHubLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
+import {
+    GitHubLogoIcon,
+    TwitterLogoIcon,
+    HeartIcon,
+} from "@radix-ui/react-icons";
 import type { ClassValue } from "clsx";
 import { cn } from "../lib/utils";
 
@@ -44,7 +48,7 @@ const { title, description, className } = Astro.props;
                             href="https://github.com/SerenModz21"
                             target="_blank"
                         >
-                            <Button variant="ghost">
+                            <Button variant="ghost" title="GitHub">
                                 <GitHubLogoIcon className="size-4" />
                                 <span class="sr-only">GitHub</span>
                             </Button>
@@ -53,9 +57,18 @@ const { title, description, className } = Astro.props;
                             href="https://twitter.com/SerenModz21"
                             target="_blank"
                         >
-                            <Button variant="ghost">
+                            <Button variant="ghost" title="Twitter">
                                 <TwitterLogoIcon className="size-4" />
                                 <span class="sr-only">Twitter</span>
+                            </Button>
+                        </a>
+                        <a
+                            href="https://github.com/sponsors/SerenModz21?o=esb"
+                            target="_blank"
+                        >
+                            <Button variant="ghost" title="Sponsor">
+                                <HeartIcon className="size-4" />
+                                <span class="sr-only">Sponsor</span>
                             </Button>
                         </a>
                     </div>

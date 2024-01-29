@@ -30,6 +30,7 @@ export function ThemeToggle(props: {
             variant={props.buttonVaiant ?? "secondary"}
             className={props.buttonClass}
             onClick={() => setThemeState(theme === "dark" ? "light" : "dark")}
+            title="Toggle theme"
         >
             <Sun
                 className={cn(
