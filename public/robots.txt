@@ -1,5 +1,4 @@
 User-Agent: *
 Allow: /
 
-Host: https://www.serenmodz.rocks
 Sitemap: https://www.serenmodz.rocks/sitemap-index.xml
