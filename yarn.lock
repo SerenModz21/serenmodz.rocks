@@ -3369,12 +3369,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.363.0":
-  version: 0.363.0
-  resolution: "lucide-react@npm:0.363.0"
+"lucide-react@npm:^0.365.0":
+  version: 0.365.0
+  resolution: "lucide-react@npm:0.365.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0
-  checksum: 10/a007e37428c7f99d5c7431703bd6970ce50c62c4592b0a91badd746bdab8ac578f87a67b9d6193d0d36bf1451c432de91795cbdc535dbcb4943510a1752d1cba
+  checksum: 10/8f1aefa3c23dc3c165610491efeff71cf208e9712f3aa665097927e3eeb69c1911f62967aa99752bf0d368cf220950a4408e559d7bfbfee27b55416636e495f7
   languageName: node
   linkType: hard
 
@@ -5272,7 +5272,7 @@ __metadata:
     clsx: "npm:^2.1.0"
     husky: "npm:^9.0.7"
     is-ci: "npm:^3.0.1"
-    lucide-react: "npm:^0.363.0"
+    lucide-react: "npm:^0.365.0"
     prettier: "npm:^3.2.2"
     prettier-plugin-astro: "npm:^0.13.0"
     prettier-plugin-tailwindcss: "npm:^0.5.11"
