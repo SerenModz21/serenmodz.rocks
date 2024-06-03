@@ -3402,12 +3402,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.379.0":
-  version: 0.379.0
-  resolution: "lucide-react@npm:0.379.0"
+"lucide-react@npm:^0.383.0":
+  version: 0.383.0
+  resolution: "lucide-react@npm:0.383.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0
-  checksum: 10/e2231158df68e08c1a4adbbd14c92380f6b4b541ce0dcacef1a05a17d8bc7e7329bb9f3f34ed0800afda82ef5c3f972749ab4d2f56a536f25ee42d81d8abcbc6
+  checksum: 10/134c625e6aaba401b4787727a2e560f38d889af6e222b27c57628f4b403749425e86f4ffa9bd2cab6e4ba5f88c4981d1f81244463deb9b44d8050197b68413ff
   languageName: node
   linkType: hard
 
@@ -4697,14 +4697,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-tailwindcss@npm:^0.5.11":
-  version: 0.5.11
-  resolution: "prettier-plugin-tailwindcss@npm:0.5.11"
+"prettier-plugin-tailwindcss@npm:^0.6.0":
+  version: 0.6.1
+  resolution: "prettier-plugin-tailwindcss@npm:0.6.1"
   peerDependencies:
     "@ianvs/prettier-plugin-sort-imports": "*"
     "@prettier/plugin-pug": "*"
     "@shopify/prettier-plugin-liquid": "*"
     "@trivago/prettier-plugin-sort-imports": "*"
+    "@zackad/prettier-plugin-twig-melody": "*"
     prettier: ^3.0
     prettier-plugin-astro: "*"
     prettier-plugin-css-order: "*"
@@ -4713,6 +4714,7 @@ __metadata:
     prettier-plugin-marko: "*"
     prettier-plugin-organize-attributes: "*"
     prettier-plugin-organize-imports: "*"
+    prettier-plugin-sort-imports: "*"
     prettier-plugin-style-order: "*"
     prettier-plugin-svelte: "*"
   peerDependenciesMeta:
@@ -4723,6 +4725,8 @@ __metadata:
     "@shopify/prettier-plugin-liquid":
       optional: true
     "@trivago/prettier-plugin-sort-imports":
+      optional: true
+    "@zackad/prettier-plugin-twig-melody":
       optional: true
     prettier-plugin-astro:
       optional: true
@@ -4738,13 +4742,13 @@ __metadata:
       optional: true
     prettier-plugin-organize-imports:
       optional: true
+    prettier-plugin-sort-imports:
+      optional: true
     prettier-plugin-style-order:
       optional: true
     prettier-plugin-svelte:
       optional: true
-    prettier-plugin-twig-melody:
-      optional: true
-  checksum: 10/79d294c035845f35dbf4cdb0707c3da235dd9c0eb5d2a7db9d779da9efdd8851dbb435646d872f507e55657dc348050c5a15fcbed09d00ef95359ccfa50ff400
+  checksum: 10/6a576c51a5a661562a6a8f68995d53407d94acb7403a658c6bab366ca1debf0aa68f0c179ccb62059ba44aa0cf0e8d0f82b5f4a700d77196ad433ca9f29ebe5a
   languageName: node
   linkType: hard
 
@@ -5305,10 +5309,10 @@ __metadata:
     clsx: "npm:^2.1.0"
     husky: "npm:^9.0.7"
     is-ci: "npm:^3.0.1"
-    lucide-react: "npm:^0.379.0"
+    lucide-react: "npm:^0.383.0"
     prettier: "npm:^3.2.2"
     prettier-plugin-astro: "npm:^0.14.0"
-    prettier-plugin-tailwindcss: "npm:^0.5.11"
+    prettier-plugin-tailwindcss: "npm:^0.6.0"
     pretty-quick: "npm:^4.0.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
