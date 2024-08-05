@@ -12,7 +12,7 @@
         "postinstall": "is-ci || husky"
     },
     "dependencies": {
-        "@astrojs/check": "^0.8.3",
+        "@astrojs/check": "^0.9.0",
         "@astrojs/react": "^3.6.0",
         "@astrojs/sitemap": "^3.1.6",
         "@astrojs/tailwind": "^5.1.0",
@@ -23,7 +23,7 @@
         "astro": "^4.12.2",
         "class-variance-authority": "^0.7.0",
         "clsx": "^2.1.1",
-        "lucide-react": "^0.417.0",
+        "lucide-react": "^0.424.0",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "tailwind-merge": "^2.4.0"
@@ -41,5 +41,5 @@
         "tailwindcss-animate": "^1.0.7",
         "typescript": "^5.4.5"
     },
-    "packageManager": "yarn@4.3.1"
+    "packageManager": "yarn@4.4.0"
 }
