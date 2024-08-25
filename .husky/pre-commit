@@ -1,1 +1,2 @@
-yarn pretty-quick --staged
+pretty-quick --staged
+git update-index --again
