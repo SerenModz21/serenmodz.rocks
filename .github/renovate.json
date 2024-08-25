@@ -1,4 +1,15 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": ["github>Kings-World/.github:renovate-config"]
+    "extends": ["github>Kings-World/.github:renovate-config"],
+    "npm": {
+        "packageRules": [
+            {
+                "matchPackageNames": [
+                    "tailwindcss",
+                    "prettier-plugin-tailwindcss"
+                ],
+                "enabled": false
+            }
+        ]
+    }
 }
