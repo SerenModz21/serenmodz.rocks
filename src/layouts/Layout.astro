@@ -20,13 +20,6 @@ const parsedDescription =
 
 <script is:inline>
     const updateTheme = (doc = document) => {
-        // scroll-smooth is missing on first load
-        // so adding the dark class, prevents it from being added
-        // it works fine on changing pages though
-        if (!doc.documentElement.classList.contains("scroll-smooth")) {
-            doc.documentElement.classList.add("scroll-smooth");
-        }
-
         // https://tailwindcss.com/docs/dark-mode#supporting-system-preference-and-manual-selection
         if (
             localStorage.theme === "dark" ||
@@ -63,7 +56,7 @@ const parsedDescription =
     updateTheme();
 </script>
 
-<html lang="en" class="scroll-smooth">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
