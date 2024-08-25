@@ -8,6 +8,7 @@ on:
 
 env:
   ASTRO_TELEMETRY_DISABLED: true
+  FORCE_COLOR: true
 
 jobs:
   astro:
