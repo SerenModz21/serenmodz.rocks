@@ -4,10 +4,7 @@
     "npm": {
         "packageRules": [
             {
-                "matchPackageNames": [
-                    "tailwindcss",
-                    "prettier-plugin-tailwindcss"
-                ],
+                "matchPackageNames": ["prettier-plugin-tailwindcss"],
                 "enabled": false
             }
         ]
