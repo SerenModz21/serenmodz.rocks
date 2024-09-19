@@ -20,7 +20,9 @@ const { url, name, description, image } = Astro.props;
 const [company] = name.split(" - ");
 ---
 
-<Card className="flex flex-col sm:flex-row">
+<Card
+    className="flex transform flex-col transition-all duration-300 ease-in-out hover:scale-[1.02] hover:drop-shadow-lg sm:flex-row"
+>
     {
         image && (
             <Image
