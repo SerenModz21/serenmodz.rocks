@@ -1472,17 +1472,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 18.3.5
-  resolution: "@types/react@npm:18.3.5"
-  dependencies:
-    "@types/prop-types": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: 10/ba0477c5ad4a762157c6262a199af6ccf9e24576877a26a7f516d5a9ba35374a6ac7f8686a10e5e8030513214f02bcb66e8363e43905afb7cd313deaf673de05
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^18.3.8":
+"@types/react@npm:*, @types/react@npm:^18.3.8":
   version: 18.3.8
   resolution: "@types/react@npm:18.3.8"
   dependencies:
@@ -1945,21 +1935,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.23.1":
-  version: 4.23.2
-  resolution: "browserslist@npm:4.23.2"
-  dependencies:
-    caniuse-lite: "npm:^1.0.30001640"
-    electron-to-chromium: "npm:^1.4.820"
-    node-releases: "npm:^2.0.14"
-    update-browserslist-db: "npm:^1.1.0"
-  bin:
-    browserslist: cli.js
-  checksum: 10/326a98b1c39bcc9a99b197f15790dc28e122b1aead3257c837421899377ac96239123f26868698085b3d9be916d72540602738e1f857e86a387e810af3fda6e5
-  languageName: node
-  linkType: hard
-
-"browserslist@npm:^4.23.3":
+"browserslist@npm:^4.23.1, browserslist@npm:^4.23.3":
   version: 4.23.3
   resolution: "browserslist@npm:4.23.3"
   dependencies:
@@ -2004,13 +1980,6 @@ __metadata:
   version: 7.0.1
   resolution: "camelcase@npm:7.0.1"
   checksum: 10/86ab8f3ebf08bcdbe605a211a242f00ed30d8bfb77dab4ebb744dd36efbc84432d1c4adb28975ba87a1b8be40a80fbd1e60e2f06565315918fa7350011a26d3d
-  languageName: node
-  linkType: hard
-
-"caniuse-lite@npm:^1.0.30001640":
-  version: 1.0.30001643
-  resolution: "caniuse-lite@npm:1.0.30001643"
-  checksum: 10/dddbda29fa24fbc435873309c71070461cbfc915d9bce3216180524c20c5637b2bee1a14b45972e9ac19e1fdf63fba3f63608b9e7d68de32f5ee1953c8c69e05
   languageName: node
   linkType: hard
 
@@ -2377,13 +2346,6 @@ __metadata:
   version: 0.2.0
   resolution: "eastasianwidth@npm:0.2.0"
   checksum: 10/9b1d3e1baefeaf7d70799db8774149cef33b97183a6addceeba0cf6b85ba23ee2686f302f14482006df32df75d32b17c509c143a3689627929e4a8efaf483952
-  languageName: node
-  linkType: hard
-
-"electron-to-chromium@npm:^1.4.820":
-  version: 1.5.2
-  resolution: "electron-to-chromium@npm:1.5.2"
-  checksum: 10/5b397518bf3347e39935d1bf9ff3dd37064619783419c0cb6507c53812b3cea7b2cfd9c54664e6fc36aae28a29562af6339fa8e8fe165845355056ce3df63bde
   languageName: node
   linkType: hard
 
@@ -3506,12 +3468,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.441.0":
-  version: 0.441.0
-  resolution: "lucide-react@npm:0.441.0"
+"lucide-react@npm:^0.445.0":
+  version: 0.445.0
+  resolution: "lucide-react@npm:0.445.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
-  checksum: 10/c423ed98e1e7b28408991dc52675e98b11547e12c3d4e4b0c25cc5eb611b1535cad9136434ef54677c43ce34c6211981cb76fe92415a6aa7c66c4f5d9b0380b8
+  checksum: 10/83da75d937f62ef00d84838d4a3ce59d42590d15879463e57e96786e61091019bff98c473f2ca00708e0eec7d20e556fa174bcc51b83d091acf935745e0e4faf
   languageName: node
   linkType: hard
 
@@ -4290,13 +4252,6 @@ __metadata:
   bin:
     node-gyp: bin/node-gyp.js
   checksum: 10/578cf0c821f258ce4b6ebce4461eca4c991a4df2dee163c0624f2fe09c7d6d37240be4942285a0048d307230248ee0b18382d6623b9a0136ce9533486deddfa8
-  languageName: node
-  linkType: hard
-
-"node-releases@npm:^2.0.14":
-  version: 2.0.14
-  resolution: "node-releases@npm:2.0.14"
-  checksum: 10/0f7607ec7db5ef1dc616899a5f24ae90c869b6a54c2d4f36ff6d84a282ab9343c7ff3ca3670fe4669171bb1e8a9b3e286e1ef1c131f09a83d70554f855d54f24
   languageName: node
   linkType: hard
 
@@ -5273,7 +5228,7 @@ __metadata:
     clsx: "npm:^2.1.1"
     husky: "npm:^9.1.6"
     is-ci: "npm:^3.0.1"
-    lucide-react: "npm:^0.441.0"
+    lucide-react: "npm:^0.445.0"
     prettier: "npm:^3.3.3"
     prettier-plugin-astro: "npm:^0.14.1"
     prettier-plugin-tailwindcss: "npm:0.6.5"
