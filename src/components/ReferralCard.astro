@@ -42,7 +42,9 @@ const [company] = name.split(" - ");
         <CardContent>
             <CardDescription>{description}</CardDescription>
             <Button className="mt-4" variant="outline">
-                <a href={url} target="_blank">View Referral</a>
+                <a href={url} target="_blank" rel="noopener noreferrer"
+                    >View Referral</a
+                >
             </Button>
         </CardContent>
     </div>

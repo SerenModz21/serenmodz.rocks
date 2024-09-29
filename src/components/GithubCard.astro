@@ -35,7 +35,12 @@ const repoLanguageColour = repo.language
 >
     <CardHeader>
         <CardTitle className="flex shrink items-center truncate text-xl">
-            <a href={repo.html_url} class="hover:underline" target="_blank">
+            <a
+                href={repo.html_url}
+                class="hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 {repo.name}
             </a>
             {
@@ -67,6 +72,7 @@ const repoLanguageColour = repo.language
                         <a
                             target="_blank"
                             href={`${repo.html_url}/search?l=${repo.language.toLowerCase()}`}
+                            rel="noopener noreferrer"
                             class="hover:underline"
                         >
                             {repo.language}
