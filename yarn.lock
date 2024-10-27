@@ -1471,13 +1471,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^18.3.11":
-  version: 18.3.11
-  resolution: "@types/react@npm:18.3.11"
+"@types/react@npm:*, @types/react@npm:^18.3.12":
+  version: 18.3.12
+  resolution: "@types/react@npm:18.3.12"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10/a36f0707fdfe9fe19cbe5892bcdab0f042ecadb501ea4e1c39519943f3e74cffbd31e892d3860f5c87cf33f5f223552b246a552bed0087b95954f2cb39d5cf65
+  checksum: 10/c9bbdfeacd5347d2240e0d2cb5336bc57dbc1b9ff557b6c4024b49df83419e4955553518169d3736039f1b62608e15b35762a6c03d49bd86e33add4b43b19033
   languageName: node
   linkType: hard
 
@@ -1617,12 +1617,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^8.12.1":
-  version: 8.12.1
-  resolution: "acorn@npm:8.12.1"
+"acorn@npm:^8.13.0":
+  version: 8.13.0
+  resolution: "acorn@npm:8.13.0"
   bin:
     acorn: bin/acorn
-  checksum: 10/d08c2d122bba32d0861e0aa840b2ee25946c286d5dc5990abca991baf8cdbfbe199b05aacb221b979411a2fea36f83e26b5ac4f6b4e0ce49038c62316c1848f0
+  checksum: 10/33e3a03114b02b3bc5009463b3d9549b31a90ee38ebccd5e66515830a02acf62a90edcc12abfb6c9fb3837b6c17a3ec9b72b3bf52ac31d8ad8248a4af871e0f5
   languageName: node
   linkType: hard
 
@@ -1759,9 +1759,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^4.16.6":
-  version: 4.16.6
-  resolution: "astro@npm:4.16.6"
+"astro@npm:^4.16.7":
+  version: 4.16.7
+  resolution: "astro@npm:4.16.7"
   dependencies:
     "@astrojs/compiler": "npm:^2.10.3"
     "@astrojs/internal-helpers": "npm:0.4.1"
@@ -1774,7 +1774,7 @@ __metadata:
     "@rollup/pluginutils": "npm:^5.1.2"
     "@types/babel__core": "npm:^7.20.5"
     "@types/cookie": "npm:^0.6.0"
-    acorn: "npm:^8.12.1"
+    acorn: "npm:^8.13.0"
     aria-query: "npm:^5.3.2"
     axobject-query: "npm:^4.1.0"
     boxen: "npm:8.0.1"
@@ -1814,7 +1814,7 @@ __metadata:
     semver: "npm:^7.6.3"
     sharp: "npm:^0.33.3"
     shiki: "npm:^1.22.0"
-    tinyexec: "npm:^0.3.0"
+    tinyexec: "npm:^0.3.1"
     tsconfck: "npm:^3.1.4"
     unist-util-visit: "npm:^5.0.0"
     vfile: "npm:^6.0.3"
@@ -1831,7 +1831,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/4cbe7cb30eb6a395662ea42aa177f4bcb2d7881873a572a3c6c221a37ac9ac018ece8bb20da635aabdd9ab3c3a26ecd32dceb9ba625811140434eaf6fdefa55c
+  checksum: 10/247ca33dc201ebc5d3f3514fa2eed5ebd8d10dd96debbfceeea92a521b79e1625673a376f85657012797c079f1940959628c48693665bc2e4b70227aff41616b
   languageName: node
   linkType: hard
 
@@ -5250,9 +5250,9 @@ __metadata:
     "@radix-ui/react-icons": "npm:^1.3.0"
     "@radix-ui/react-separator": "npm:^1.1.0"
     "@radix-ui/react-slot": "npm:^1.1.0"
-    "@types/react": "npm:^18.3.11"
+    "@types/react": "npm:^18.3.12"
     "@types/react-dom": "npm:^18.3.1"
-    astro: "npm:^4.16.6"
+    astro: "npm:^4.16.7"
     class-variance-authority: "npm:^0.7.0"
     clsx: "npm:^2.1.1"
     husky: "npm:^9.1.6"
@@ -5699,10 +5699,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyexec@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "tinyexec@npm:0.3.0"
-  checksum: 10/317cc536d091ce7e50271287798d91ef53c4dc80088844d890752a2c7387d213004cba83e5e1d9129390ced617625e34f4a8f0ba5779e31c9b6939f9be0d3543
+"tinyexec@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "tinyexec@npm:0.3.1"
+  checksum: 10/0537c70590d52d354f40c0255ff0f654a3d18ddb3812b440ddf9d436edf516c8057838ad5a38744c0c59670ec03e3cf23fbe04ae3d49f031d948274e99002569
   languageName: node
   linkType: hard
 
