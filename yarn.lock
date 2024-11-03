@@ -1077,7 +1077,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-icons@npm:^1.3.0":
+"@radix-ui/react-icons@npm:^1.3.1":
   version: 1.3.1
   resolution: "@radix-ui/react-icons@npm:1.3.1"
   peerDependencies:
@@ -1742,7 +1742,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^4.16.7":
+"astro@npm:^4.16.8":
   version: 4.16.8
   resolution: "astro@npm:4.16.8"
   dependencies:
@@ -3424,12 +3424,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.453.0":
-  version: 0.453.0
-  resolution: "lucide-react@npm:0.453.0"
+"lucide-react@npm:^0.454.0":
+  version: 0.454.0
+  resolution: "lucide-react@npm:0.454.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
-  checksum: 10/b49c486ce04ebe3650d756aab0584eb96d4b3c2381ab1185ebedbd00333cfafcfe71766f918bc5ea7538bab0339804363afa5503acb416ee2208af9d31a9fac1
+  checksum: 10/90b40271182e15fefc9cbc6aca4645a49691f73b1887daffb0c9d048f61c89a1c1d7eac1096a37ba627bdce91e8aa49fcf43a5cf0ebd255117ce848d71a56dd1
   languageName: node
   linkType: hard
 
@@ -5203,17 +5203,17 @@ __metadata:
     "@astrojs/sitemap": "npm:^3.2.1"
     "@astrojs/tailwind": "npm:^5.1.2"
     "@octokit/rest": "npm:^21.0.2"
-    "@radix-ui/react-icons": "npm:^1.3.0"
+    "@radix-ui/react-icons": "npm:^1.3.1"
     "@radix-ui/react-separator": "npm:^1.1.0"
     "@radix-ui/react-slot": "npm:^1.1.0"
     "@types/react": "npm:^18.3.12"
     "@types/react-dom": "npm:^18.3.1"
-    astro: "npm:^4.16.7"
+    astro: "npm:^4.16.8"
     class-variance-authority: "npm:^0.7.0"
     clsx: "npm:^2.1.1"
     husky: "npm:^9.1.6"
     is-ci: "npm:^3.0.1"
-    lucide-react: "npm:^0.453.0"
+    lucide-react: "npm:^0.454.0"
     prettier: "npm:^3.3.3"
     prettier-plugin-astro: "npm:^0.14.1"
     prettier-plugin-tailwindcss: "npm:0.6.5"
