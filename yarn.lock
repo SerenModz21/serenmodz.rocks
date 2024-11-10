@@ -1742,9 +1742,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^4.16.8":
-  version: 4.16.8
-  resolution: "astro@npm:4.16.8"
+"astro@npm:^4.16.10":
+  version: 4.16.10
+  resolution: "astro@npm:4.16.10"
   dependencies:
     "@astrojs/compiler": "npm:^2.10.3"
     "@astrojs/internal-helpers": "npm:0.4.1"
@@ -1788,7 +1788,7 @@ __metadata:
     micromatch: "npm:^4.0.8"
     mrmime: "npm:^2.0.0"
     neotraverse: "npm:^0.6.18"
-    ora: "npm:^8.1.0"
+    ora: "npm:^8.1.1"
     p-limit: "npm:^6.1.0"
     p-queue: "npm:^8.0.1"
     preferred-pm: "npm:^4.0.0"
@@ -1814,7 +1814,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/537923812270101838e7bbe2f811e157f1a1fec37080cdbb34ce12c4aba423e09545548879707e03fad5c31f9e4eca737a198e6946c43f3d3dcefbed75e90720
+  checksum: 10/60d1719ee58aa67f4644c74b982894a2e4c4b1132c426b6247543f54bf3dbfc45f5e654e37667e8d9c4749a2d62a9535e4e7afd3b6ad18302739b4f2984e3785
   languageName: node
   linkType: hard
 
@@ -3424,12 +3424,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.454.0":
-  version: 0.454.0
-  resolution: "lucide-react@npm:0.454.0"
+"lucide-react@npm:^0.456.0":
+  version: 0.456.0
+  resolution: "lucide-react@npm:0.456.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
-  checksum: 10/90b40271182e15fefc9cbc6aca4645a49691f73b1887daffb0c9d048f61c89a1c1d7eac1096a37ba627bdce91e8aa49fcf43a5cf0ebd255117ce848d71a56dd1
+  checksum: 10/214a3585e9b028d86f7ea161a13c4b9b7578d3901a7fda040e1bb8e115552957b91d29c248a25c77e1b9e466c160195219809ea0fa4b26e5a741c8534cea17e9
   languageName: node
   linkType: hard
 
@@ -4295,9 +4295,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ora@npm:^8.1.0":
-  version: 8.1.0
-  resolution: "ora@npm:8.1.0"
+"ora@npm:^8.1.1":
+  version: 8.1.1
+  resolution: "ora@npm:8.1.1"
   dependencies:
     chalk: "npm:^5.3.0"
     cli-cursor: "npm:^5.0.0"
@@ -4308,7 +4308,7 @@ __metadata:
     stdin-discarder: "npm:^0.2.2"
     string-width: "npm:^7.2.0"
     strip-ansi: "npm:^7.1.0"
-  checksum: 10/2b394b79ccae4f0aa6d5ef5b4b511be41e5e2f09de00845f6506368b49e577e77e2c08ad5fbdd7de98a25ef8d216a714ac7cc13665408e52e17b80e1ada93d31
+  checksum: 10/2308c0a4da83099b0778a914890f5561329e3c948f73e865e0dced9053d62327219d8bde0f9b7c79a02913a7e41458ff5667d0115032fedc54907862e2de9695
   languageName: node
   linkType: hard
 
@@ -5208,12 +5208,12 @@ __metadata:
     "@radix-ui/react-slot": "npm:^1.1.0"
     "@types/react": "npm:^18.3.12"
     "@types/react-dom": "npm:^18.3.1"
-    astro: "npm:^4.16.8"
+    astro: "npm:^4.16.10"
     class-variance-authority: "npm:^0.7.0"
     clsx: "npm:^2.1.1"
     husky: "npm:^9.1.6"
     is-ci: "npm:^3.0.1"
-    lucide-react: "npm:^0.454.0"
+    lucide-react: "npm:^0.456.0"
     prettier: "npm:^3.3.3"
     prettier-plugin-astro: "npm:^0.14.1"
     prettier-plugin-tailwindcss: "npm:0.6.5"
