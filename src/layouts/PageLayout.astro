@@ -1,12 +1,8 @@
 ---
 import Layout from "~/layouts/Layout.astro";
-import { ThemeToggle } from "~/components/ThemeToggle";
 import { Separator } from "~/components/ui/separator";
-import { Button } from "~/components/ui/button";
-import { Github, Githubsponsors, X } from "simple-icons-astro";
 import type { ClassValue } from "clsx";
 import { cn } from "~/lib/utils";
-import { MobileNav } from "~/components/MobileNav";
 import Navbar from "~/components/Navbar.astro";
 
 interface Props {
@@ -20,7 +16,7 @@ const { title, description, className } = Astro.props;
 
 <Layout title={title} description={description}>
     <div
-        class="flex min-h-screen flex-col items-center lg:mx-auto lg:max-w-screen-xl"
+        class="flex min-h-dvh flex-col items-center lg:mx-auto lg:max-w-screen-xl"
     >
         <div class="w-full">
             <Navbar />
