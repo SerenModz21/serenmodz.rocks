@@ -1,13 +1,7 @@
 ---
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from "./ui/card";
 import { Button } from "./ui/button";
 import { Image } from "astro:assets";
+import { Card } from "./ui/card";
 
 interface Props {
     url: string;
@@ -20,9 +14,7 @@ const { url, name, description, image } = Astro.props;
 const [company] = name.split(" - ");
 ---
 
-<Card
-    className="flex transform flex-col transition-all duration-300 ease-in-out hover:scale-[1.02] hover:drop-shadow-lg sm:flex-row"
->
+<Card className="flex flex-col p-6 sm:flex-row">
     {
         image && (
             <Image
@@ -30,22 +22,20 @@ const [company] = name.split(" - ");
                 alt={`${company} Logo`}
                 height="60"
                 width="60"
-                class="ml-4 mt-4 object-contain sm:ml-8 sm:mt-0"
+                class="bg-grey-900 mr-6 items-center object-contain"
             />
         )
     }
 
-    <div class="w-full flex-col">
-        <CardHeader>
-            <CardTitle>{name}</CardTitle>
-        </CardHeader>
-        <CardContent>
-            <CardDescription>{description}</CardDescription>
-            <Button className="mt-4" variant="outline">
-                <a href={url} target="_blank" rel="noopener noreferrer"
-                    >View Referral</a
-                >
-            </Button>
-        </CardContent>
+    <div class="mt-2 space-y-1 sm:mt-0">
+        <h1 class="text-balance text-lg font-semibold sm:text-wrap">{name}</h1>
+        <p class="text-balance text-sm text-muted-foreground sm:text-wrap">
+            {description}
+        </p>
+        <a href={url} target="_blank" rel="noopener noreferrer">
+            <Button variant="secondary" className="mt-3 text-sm"
+                >View Referral</Button
+            >
+        </a>
     </div>
 </Card>

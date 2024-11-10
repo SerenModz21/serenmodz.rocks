@@ -1,8 +1,8 @@
 ---
-import PageLayout from "../layouts/PageLayout.astro";
-import ProjectSection from "../components/ProjectSection.astro";
+import PageLayout from "~/layouts/PageLayout.astro";
+import ProjectSection from "~/components/ProjectSection.astro";
 
-import { fetchUserRepos, fetchOrgRepos } from "../lib/github";
+import { fetchUserRepos, fetchOrgRepos } from "~/lib/github";
 
 const personalRepos = await fetchUserRepos("SerenModz21");
 const kingsWorldRepos = await fetchOrgRepos("Kings-World");

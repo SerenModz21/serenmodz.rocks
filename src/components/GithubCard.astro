@@ -4,6 +4,7 @@ import {
     Card,
     CardContent,
     CardDescription,
+    CardFooter,
     CardHeader,
     CardTitle,
 } from "./ui/card";
@@ -33,8 +34,8 @@ const repoLanguageColour = repo.language
 <Card
     className="transform transition-all duration-300 ease-in-out hover:scale-[1.01] hover:drop-shadow-lg"
 >
-    <CardHeader>
-        <CardTitle className="flex shrink items-center truncate text-xl">
+    <CardHeader className="pb-4">
+        <CardTitle className="flex shrink items-center truncate text-lg">
             <a
                 href={repo.html_url}
                 class="hover:underline"
@@ -45,59 +46,60 @@ const repoLanguageColour = repo.language
             </a>
             {
                 repo.archived && (
-                    <Badge variant="destructive" className="mx-4">
+                    <Badge variant="destructive" className="ml-4">
                         Archived
                     </Badge>
                 )
             }
         </CardTitle>
-        <CardDescription className="mr-1 h-10 min-h-10">
-            {repo.description}
+        <CardDescription className="h-9 min-h-9 overflow-hidden">
+            <p class="line-clamp-2 text-ellipsis">{repo.description}</p>
         </CardDescription>
     </CardHeader>
-    <CardContent>
-        <div class="flex space-x-4 text-sm text-muted-foreground">
-            {
-                repo.language && (
-                    <div class="flex items-center" title="Language">
-                        {repoLanguageColour && (
-                            <Circle
-                                className="mr-1 size-3"
-                                style={{
-                                    color: repoLanguageColour,
-                                    fill: repoLanguageColour,
-                                }}
-                            />
-                        )}
-                        <a
-                            target="_blank"
-                            href={`${repo.html_url}/search?l=${repo.language.toLowerCase()}`}
-                            rel="noopener noreferrer"
-                            class="hover:underline"
-                        >
-                            {repo.language}
-                        </a>
-                    </div>
-                )
-            }
-            <div class="flex items-center" title="Stars">
-                <Star className="mr-1 size-3" />
-                {repo.stargazers_count}
-                <span class="sr-only">Stars</span>
-            </div>
-            <div class="flex items-center" title="Forks">
-                <GitFork className="mr-1 size-3" />
-                {repo.forks_count}
-                <span class="sr-only">Forks</span>
-            </div>
-            {
-                repo.license && (
-                    <div class="flex items-center truncate" title="License">
-                        <Scale className="mr-1 size-3" />
-                        {repo.license.name}
-                    </div>
-                )
-            }
+    <CardFooter className="space-x-4 text-xs text-muted-foreground">
+        {
+            repo.language && (
+                <div class="flex items-center" title="Language">
+                    {repoLanguageColour && (
+                        <Circle
+                            className="mr-1 size-3"
+                            style={{
+                                color: repoLanguageColour,
+                                fill: repoLanguageColour,
+                            }}
+                        />
+                    )}
+                    <a
+                        target="_blank"
+                        href={`${repo.html_url}/search?l=${repo.language.toLowerCase()}`}
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        {repo.language}
+                    </a>
+                </div>
+            )
+        }
+
+        <div class="flex items-center" title="Stars">
+            <Star className="mr-1 size-3" />
+            {repo.stargazers_count}
+            <span class="sr-only">Stars</span>
         </div>
-    </CardContent>
+
+        <div class="flex items-center" title="Forks">
+            <GitFork className="mr-1 size-3" />
+            {repo.forks_count}
+            <span class="sr-only">Forks</span>
+        </div>
+
+        {
+            repo.license && (
+                <div class="flex items-center truncate" title="License">
+                    <Scale className="mr-1 size-3" />
+                    {repo.license.name}
+                </div>
+            )
+        }
+    </CardFooter>
 </Card>

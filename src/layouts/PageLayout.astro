@@ -1,15 +1,13 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import { ThemeToggle } from "../components/ThemeToggle";
-import { Separator } from "../components/ui/separator";
-import { Button } from "../components/ui/button";
-import {
-    GitHubLogoIcon,
-    TwitterLogoIcon,
-    HeartIcon,
-} from "@radix-ui/react-icons";
+import Layout from "~/layouts/Layout.astro";
+import { ThemeToggle } from "~/components/ThemeToggle";
+import { Separator } from "~/components/ui/separator";
+import { Button } from "~/components/ui/button";
+import { Github, Githubsponsors, X } from "simple-icons-astro";
 import type { ClassValue } from "clsx";
-import { cn } from "../lib/utils";
+import { cn } from "~/lib/utils";
+import { MobileNav } from "~/components/MobileNav";
+import Navbar from "~/components/Navbar.astro";
 
 interface Props {
     title?: string;
@@ -22,66 +20,15 @@ const { title, description, className } = Astro.props;
 
 <Layout title={title} description={description}>
     <div
-        class="flex flex-col items-center justify-center lg:mx-auto lg:max-w-screen-xl"
+        class="flex min-h-screen flex-col items-center lg:mx-auto lg:max-w-screen-xl"
     >
-        <div class="mt-2 w-full">
-            <div class="mx-4 flex flex-col justify-between sm:flex-row">
-                <nav class="space-x-4">
-                    <a href="/">
-                        <Button variant="ghost">Home</Button>
-                    </a>
-                    <a href="/projects">
-                        <Button variant="ghost">Projects</Button>
-                    </a>
-                    <a href="/referrals">
-                        <Button variant="ghost">Referrals</Button>
-                    </a>
-                </nav>
-                <div class="mt-4 flex flex-row space-x-4 sm:mt-0">
-                    <ThemeToggle
-                        iconClass="size-4"
-                        buttonVaiant="ghost"
-                        client:load
-                    />
-                    <div class="space-x-1">
-                        <a
-                            href="https://github.com/SerenModz21"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Button variant="ghost" title="GitHub">
-                                <GitHubLogoIcon className="size-4" />
-                                <span class="sr-only">GitHub</span>
-                            </Button>
-                        </a>
-                        <a
-                            href="https://twitter.com/SerenModz21"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Button variant="ghost" title="Twitter">
-                                <TwitterLogoIcon className="size-4" />
-                                <span class="sr-only">Twitter</span>
-                            </Button>
-                        </a>
-                        <a
-                            href="https://github.com/sponsors/SerenModz21"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Button variant="ghost" title="Sponsor">
-                                <HeartIcon className="size-4" />
-                                <span class="sr-only">Sponsor</span>
-                            </Button>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="w-full">
+            <Navbar />
         </div>
 
-        <Separator className="my-2" />
+        <Separator />
 
-        <main class={cn("mx-4 flex flex-col", className)}>
+        <main class={cn("m-4 flex flex-col flex-1", className)}>
             <slot />
         </main>
     </div>
