@@ -1,10 +1,5 @@
 ---
 import { cn } from "~/lib/utils";
-
-// remove trailing slash from pathname
-const path = Astro.url.pathname.endsWith("/")
-    ? Astro.url.pathname.slice(0, -1)
-    : Astro.url.pathname;
 ---
 
 <div class="hidden items-center md:flex">
@@ -21,19 +16,21 @@ const path = Astro.url.pathname.endsWith("/")
             Home
         </a>
         <a
-            href="/projects"
+            href="/projects/"
             class={cn(
                 "transition-colors hover:text-foreground/80",
-                path === "/projects" ? "text-foreground" : "text-foreground/60",
+                Astro.url.pathname === "/projects/"
+                    ? "text-foreground"
+                    : "text-foreground/60",
             )}
         >
             Projects
         </a>
         <a
-            href="/referrals"
+            href="/referrals/"
             class={cn(
                 "transition-colors hover:text-foreground/80",
-                path === "/referrals"
+                Astro.url.pathname === "/referrals/"
                     ? "text-foreground"
                     : "text-foreground/60",
             )}
