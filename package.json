@@ -26,7 +26,7 @@
         "lucide-react": "^0.460.0",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
-        "simple-icons-astro": "^13.16.0",
+        "simple-icons-astro": "^13.17.0",
         "tailwind-merge": "^2.5.4"
     },
     "devDependencies": {
