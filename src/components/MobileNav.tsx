@@ -20,7 +20,7 @@ export function MobileNav() {
                     <span className="sr-only">Open mobile nav</span>
                 </Button>
             </SheetTrigger>
-            <SheetContent side="left">
+            <SheetContent side="left" aria-describedby={undefined}>
                 <SheetHeader>
                     <SheetTitle className="text-center">
                         Seren_Modz 21
