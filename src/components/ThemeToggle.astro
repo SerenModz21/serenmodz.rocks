@@ -1,0 +1,29 @@
+---
+import { Moon, Sun } from "lucide-react";
+import { Button, type ButtonProps } from "./ui/button";
+
+type Props = Omit<ButtonProps, "id" | "title">;
+
+const props = Astro.props;
+---
+
+<Button {...props} id="theme-toggle">
+    <Sun className="hidden dark:block" />
+    <Moon className="dark:hidden" />
+    <span class="sr-only">Toggle theme</span>
+</Button>
+
+<script>
+    const button = document.getElementById("theme-toggle");
+    if (button) {
+        // Toggle the dark class on button click
+        button.addEventListener("click", function () {
+            const out = document.documentElement.classList.toggle("dark");
+            this.title = `Switch to ${out ? "light" : "dark"} mode`;
+        });
+
+        // Set the title attribute based on the current theme
+        const isDark = document.documentElement.classList.contains("dark");
+        button.title = `Switch to ${isDark ? "light" : "dark"} mode`;
+    }
+</script>

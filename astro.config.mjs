@@ -7,7 +7,6 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
     site: "https://www.serenmodz.rocks",
-    prefetch: { prefetchAll: true },
     integrations: [
         react(),
         tailwind({ applyBaseStyles: false }),

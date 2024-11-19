@@ -7,7 +7,7 @@ import {
     CardHeader,
     CardTitle,
 } from "./ui/card";
-import { Circle, Scale, Star, GitFork } from "lucide-react";
+import { Circle, Star, GitFork } from "lucide-react";
 import { Badge } from "./ui/badge";
 
 interface Props {
@@ -30,9 +30,7 @@ const repoLanguageColour = repo.language
     : null;
 ---
 
-<Card
-    className="transform transition-all duration-300 ease-in-out hover:scale-[1.01] hover:drop-shadow-lg"
->
+<Card>
     <CardHeader className="pb-4">
         <CardTitle className="flex shrink items-center truncate text-lg">
             <a
@@ -51,11 +49,11 @@ const repoLanguageColour = repo.language
                 )
             }
         </CardTitle>
-        <CardDescription className="h-9 min-h-9 overflow-hidden">
+        <CardDescription className="h-10 min-h-10 overflow-hidden">
             <p class="line-clamp-2 text-ellipsis">{repo.description}</p>
         </CardDescription>
     </CardHeader>
-    <CardFooter className="space-x-4 text-xs text-muted-foreground">
+    <CardFooter className="gap-4 text-xs text-muted-foreground">
         {
             repo.language && (
                 <div class="flex items-center" title="Language">
@@ -91,14 +89,5 @@ const repoLanguageColour = repo.language
             {repo.forks_count}
             <span class="sr-only">Forks</span>
         </div>
-
-        {
-            repo.license && (
-                <div class="flex items-center truncate" title="License">
-                    <Scale className="mr-1 size-3" />
-                    {repo.license.name}
-                </div>
-            )
-        }
     </CardFooter>
 </Card>

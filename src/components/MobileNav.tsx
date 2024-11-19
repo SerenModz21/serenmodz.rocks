@@ -22,9 +22,11 @@ export function MobileNav() {
             </SheetTrigger>
             <SheetContent side="left">
                 <SheetHeader>
-                    <SheetTitle>Seren_Modz 21</SheetTitle>
+                    <SheetTitle className="text-center">
+                        Seren_Modz 21
+                    </SheetTitle>
                 </SheetHeader>
-                <nav className="mt-4 flex flex-col space-y-4">
+                <nav className="mt-4 flex flex-col gap-4">
                     <a href="/">
                         <Button variant="ghost" className="w-full">
                             Home

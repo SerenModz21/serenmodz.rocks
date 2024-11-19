@@ -1,48 +1,11 @@
 ---
-import { ThemeToggle } from "~/components/ThemeToggle";
-import { Button } from "~/components/ui/button";
-import { Github, Githubsponsors, X } from "simple-icons-astro";
+import ThemeToggle from "./ThemeToggle.astro";
 import MainNav from "./MainNav.astro";
 import { MobileNav } from "./MobileNav";
 ---
 
-<header class="mx-4 my-2 flex flex-row justify-between">
+<header class="mx-4 my-2 flex w-full flex-row justify-between">
     <MainNav />
-    <MobileNav client:load />
-    <div class="flex gap-0.5">
-        <a
-            href="https://github.com/SerenModz21"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <Button variant="ghost" size="icon" title="GitHub">
-                <Github />
-                <span class="sr-only">GitHub</span>
-            </Button>
-        </a>
-
-        <a
-            href="https://twitter.com/SerenModz21"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <Button variant="ghost" size="icon" title="Twitter">
-                <X />
-                <span class="sr-only">Twitter</span>
-            </Button>
-        </a>
-
-        <a
-            href="https://github.com/sponsors/SerenModz21"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <Button variant="ghost" size="icon" title="Sponsor">
-                <Githubsponsors />
-                <span class="sr-only">Sponsor</span>
-            </Button>
-        </a>
-
-        <ThemeToggle variant="ghost" client:load />
-    </div>
+    <MobileNav client:visible />
+    <ThemeToggle variant="ghost" />
 </header>
