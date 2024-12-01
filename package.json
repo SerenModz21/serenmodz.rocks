@@ -20,14 +20,14 @@
         "@radix-ui/react-dialog": "^1.1.2",
         "@radix-ui/react-separator": "^1.1.0",
         "@radix-ui/react-slot": "^1.1.0",
-        "astro": "^4.16.14",
-        "class-variance-authority": "^0.7.0",
+        "astro": "^4.16.16",
+        "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
-        "lucide-react": "^0.460.0",
+        "lucide-react": "^0.462.0",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "simple-icons-astro": "^13.18.0",
-        "tailwind-merge": "^2.5.4"
+        "tailwind-merge": "^2.5.5"
     },
     "devDependencies": {
         "@commitlint/cli": "^19.6.0",
@@ -36,7 +36,7 @@
         "@types/react-dom": "^18.3.1",
         "husky": "^9.1.7",
         "is-ci": "^3.0.1",
-        "prettier": "^3.3.3",
+        "prettier": "^3.4.1",
         "prettier-plugin-astro": "^0.14.1",
         "prettier-plugin-tailwindcss": "0.6.5",
         "pretty-quick": "^4.0.0",
@@ -44,5 +44,5 @@
         "tailwindcss-animate": "^1.0.7",
         "typescript": "^5.7.2"
     },
-    "packageManager": "yarn@4.5.2"
+    "packageManager": "yarn@4.5.3"
 }
