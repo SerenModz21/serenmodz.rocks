@@ -1,6 +1,6 @@
 ---
 // i am using env.MODE instead of env.PROD because env.PROD is only true when NODE_ENV=production
-// unfortuantely, "yarn preview" does not set env.PROD to true
+// unfortunately, "yarn preview" does not set env.PROD to true
 if (import.meta.env.MODE === "production") return;
 ---
 

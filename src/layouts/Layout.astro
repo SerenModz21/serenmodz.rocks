@@ -1,6 +1,6 @@
 ---
 import "~/styles/globals.css";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import TailwindIndicator from "~/components/TailwindIndicator.astro";
 
 interface Props {
@@ -88,7 +88,7 @@ const parsedDescription =
         <meta name="twitter:site" content="@SerenModz21" />
         <meta name="twitter:creator" content="@SerenModz21" />
 
-        <ViewTransitions />
+        <ClientRouter />
     </head>
     <body class="min-h-screen antialiased">
         <slot />
