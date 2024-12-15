@@ -88,9 +88,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/markdown-remark@npm:6.0.0":
-  version: 6.0.0
-  resolution: "@astrojs/markdown-remark@npm:6.0.0"
+"@astrojs/markdown-remark@npm:6.0.1":
+  version: 6.0.1
+  resolution: "@astrojs/markdown-remark@npm:6.0.1"
   dependencies:
     "@astrojs/prism": "npm:3.2.0"
     github-slugger: "npm:^2.0.0"
@@ -111,7 +111,7 @@ __metadata:
     unist-util-visit: "npm:^5.0.0"
     unist-util-visit-parents: "npm:^6.0.1"
     vfile: "npm:^6.0.3"
-  checksum: 10/e79d986c14738562b92c5c110871af41ed986c0c3704e2224fde7681812b8306b4330f5cc1320bd78d41c847e1c59ba2e82073fc315fb1f6f03ce92be211ab5a
+  checksum: 10/9dfdd2d92f3a6fec9ea2edaa68d5c824b1ca1efb2437de9e30457b43b9fe7a96cd6a0c1082648911a03d6efb7debc5aa071009ea723a5fb37c1d65c1663ac48b
   languageName: node
   linkType: hard
 
@@ -124,19 +124,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/react@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@astrojs/react@npm:4.0.0"
+"@astrojs/react@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@astrojs/react@npm:4.1.0"
   dependencies:
     "@vitejs/plugin-react": "npm:^4.3.4"
     ultrahtml: "npm:^1.5.3"
     vite: "npm:^6.0.1"
   peerDependencies:
-    "@types/react": ^17.0.50 || ^18.0.21
-    "@types/react-dom": ^17.0.17 || ^18.0.6
-    react: ^17.0.2 || ^18.0.0 || ^19.0.0-beta
-    react-dom: ^17.0.2 || ^18.0.0 || ^19.0.0-beta
-  checksum: 10/fa678406eaee8e6a4e6acb18f255c1b0e297a47e37aa644602d382a64a4d64443235a1bfddcfd742174453e493ddcfc9f0272330bf500e04f13b1977e644abf7
+    "@types/react": ^17.0.50 || ^18.0.21 || ^19.0.0
+    "@types/react-dom": ^17.0.17 || ^18.0.6 || ^19.0.0
+    react: ^17.0.2 || ^18.0.0 || ^19.0.0
+    react-dom: ^17.0.2 || ^18.0.0 || ^19.0.0
+  checksum: 10/5752150b6e21f473e07525d691a054d8073e89cf943e9cef1954c557dbd6014bbe5f87441a29bb94897b2cae3c69bed74960d75e050e02a2cfe4010604f7e7d3
   languageName: node
   linkType: hard
 
@@ -1390,23 +1390,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/primitive@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@radix-ui/primitive@npm:1.1.0"
-  checksum: 10/7cbf70bfd4b2200972dbd52a9366801b5a43dd844743dc97eb673b3ec8e64f5dd547538faaf9939abbfe8bb275773767ecf5a87295d90ba09c15cba2b5528c89
+"@radix-ui/primitive@npm:1.1.1":
+  version: 1.1.1
+  resolution: "@radix-ui/primitive@npm:1.1.1"
+  checksum: 10/d7e819177590108b74139809d52ec043c0962ae3513e947998be575fb13639c5c1c091896ddcf1d6a22a777d44ade59d22c2019ce9099607fc62a5de09c59707
   languageName: node
   linkType: hard
 
-"@radix-ui/react-compose-refs@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@radix-ui/react-compose-refs@npm:1.1.0"
+"@radix-ui/react-compose-refs@npm:1.1.1":
+  version: 1.1.1
+  resolution: "@radix-ui/react-compose-refs@npm:1.1.1"
   peerDependencies:
     "@types/react": "*"
     react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 10/047a4ed5f87cb848be475507cd62836cf5af5761484681f521ea543ea7c9d59d61d42806d6208863d5e2380bf38cdf4cff73c2bbe5f52dbbe50fb04e1a13ac72
+  checksum: 10/1be82f9f7fab96cc10f167a2e4f976e0135a63d473334f664c06f02af13bc5ea1994cb0505f89ed190d756cb65d57506721c030908af07e49b9e3cfd36044f33
   languageName: node
   linkType: hard
 
@@ -1423,21 +1423,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-dialog@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "@radix-ui/react-dialog@npm:1.1.2"
+"@radix-ui/react-dialog@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "@radix-ui/react-dialog@npm:1.1.3"
   dependencies:
-    "@radix-ui/primitive": "npm:1.1.0"
-    "@radix-ui/react-compose-refs": "npm:1.1.0"
+    "@radix-ui/primitive": "npm:1.1.1"
+    "@radix-ui/react-compose-refs": "npm:1.1.1"
     "@radix-ui/react-context": "npm:1.1.1"
-    "@radix-ui/react-dismissable-layer": "npm:1.1.1"
+    "@radix-ui/react-dismissable-layer": "npm:1.1.2"
     "@radix-ui/react-focus-guards": "npm:1.1.1"
-    "@radix-ui/react-focus-scope": "npm:1.1.0"
+    "@radix-ui/react-focus-scope": "npm:1.1.1"
     "@radix-ui/react-id": "npm:1.1.0"
-    "@radix-ui/react-portal": "npm:1.1.2"
-    "@radix-ui/react-presence": "npm:1.1.1"
-    "@radix-ui/react-primitive": "npm:2.0.0"
-    "@radix-ui/react-slot": "npm:1.1.0"
+    "@radix-ui/react-portal": "npm:1.1.3"
+    "@radix-ui/react-presence": "npm:1.1.2"
+    "@radix-ui/react-primitive": "npm:2.0.1"
+    "@radix-ui/react-slot": "npm:1.1.1"
     "@radix-ui/react-use-controllable-state": "npm:1.1.0"
     aria-hidden: "npm:^1.1.1"
     react-remove-scroll: "npm:2.6.0"
@@ -1451,17 +1451,17 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 10/9ed653e8e29443331d8dda8174f3c47194104e8b6e7bdd8f56998860fd8bf5e5a8867863bc93b089f8f7e37964375341eec2965e2f35ec26ee2cf2dd175bb503
+  checksum: 10/70efa2688a599cb43f0b9d3b6730a5d44339bbe20446c16a98f2ae86b72fa1e2e4389e705d9eb1c368cefd4895b0e058a49d65d3b412d5436cac8a39545ff857
   languageName: node
   linkType: hard
 
-"@radix-ui/react-dismissable-layer@npm:1.1.1":
-  version: 1.1.1
-  resolution: "@radix-ui/react-dismissable-layer@npm:1.1.1"
+"@radix-ui/react-dismissable-layer@npm:1.1.2":
+  version: 1.1.2
+  resolution: "@radix-ui/react-dismissable-layer@npm:1.1.2"
   dependencies:
-    "@radix-ui/primitive": "npm:1.1.0"
-    "@radix-ui/react-compose-refs": "npm:1.1.0"
-    "@radix-ui/react-primitive": "npm:2.0.0"
+    "@radix-ui/primitive": "npm:1.1.1"
+    "@radix-ui/react-compose-refs": "npm:1.1.1"
+    "@radix-ui/react-primitive": "npm:2.0.1"
     "@radix-ui/react-use-callback-ref": "npm:1.1.0"
     "@radix-ui/react-use-escape-keydown": "npm:1.1.0"
   peerDependencies:
@@ -1474,7 +1474,7 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 10/4f2346846f15f3482b8b6cd850448838d01520366deef840d8e80f5a3443aa7f21f86bd5b9a26f2709dcf94f1ec3f2bdfe80d5c37cba504c41e487c7ff8af3de
+  checksum: 10/cc67988d8341aaa870773486de689f22c1414ec15ee748baa4f2c16c900acc7f8d0a2c6f1b19c765d76da87b06d688c1c308241ae306f0ab72acd4fbfe26e717
   languageName: node
   linkType: hard
 
@@ -1491,12 +1491,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-focus-scope@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@radix-ui/react-focus-scope@npm:1.1.0"
+"@radix-ui/react-focus-scope@npm:1.1.1":
+  version: 1.1.1
+  resolution: "@radix-ui/react-focus-scope@npm:1.1.1"
   dependencies:
-    "@radix-ui/react-compose-refs": "npm:1.1.0"
-    "@radix-ui/react-primitive": "npm:2.0.0"
+    "@radix-ui/react-compose-refs": "npm:1.1.1"
+    "@radix-ui/react-primitive": "npm:2.0.1"
     "@radix-ui/react-use-callback-ref": "npm:1.1.0"
   peerDependencies:
     "@types/react": "*"
@@ -1508,7 +1508,7 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 10/a34dc5caecc56483e293de770fde3addcebd975b94625cb7057bee3f0837d82bba9a672bef7c7902d28d68d31ab9b3847c88285664b5b747ac9141dabf11df3c
+  checksum: 10/128508e7e34a47fd44d51bdb3d66a35a337c54b64125548d4a98bb377ee89b2fd8f96e0a075368d393c6664abba1e5a2f167734a6adbb170c41da0aa7a06d05f
   languageName: node
   linkType: hard
 
@@ -1527,11 +1527,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-portal@npm:1.1.2":
+"@radix-ui/react-portal@npm:1.1.3":
+  version: 1.1.3
+  resolution: "@radix-ui/react-portal@npm:1.1.3"
+  dependencies:
+    "@radix-ui/react-primitive": "npm:2.0.1"
+    "@radix-ui/react-use-layout-effect": "npm:1.1.0"
+  peerDependencies:
+    "@types/react": "*"
+    "@types/react-dom": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-dom":
+      optional: true
+  checksum: 10/470fb50c940772d05cc268e219b3d15848909dcd0a2dc1952965d0af905992f0ccab99e99c490dea6564c441397eba720b8425ba9f4582c94bef40ebe27ac0d0
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-presence@npm:1.1.2":
   version: 1.1.2
-  resolution: "@radix-ui/react-portal@npm:1.1.2"
+  resolution: "@radix-ui/react-presence@npm:1.1.2"
   dependencies:
-    "@radix-ui/react-primitive": "npm:2.0.0"
+    "@radix-ui/react-compose-refs": "npm:1.1.1"
     "@radix-ui/react-use-layout-effect": "npm:1.1.0"
   peerDependencies:
     "@types/react": "*"
@@ -1543,16 +1563,34 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 10/2f737dc0445f02f512f814ba140227e1a049b3d215d79e22ead412c9befe830292c48a559a8ad1514a474ae8f0c4c43954dfbe294b93a0279d8747d08f7b7924
+  checksum: 10/b7c7a1eed6e2a4b8778f37d925bca12fccb2a3fdd48fa854cb3d6308592aec7253b0a193cba65b8c323e14a14119935434e8f6d9bdc0fbf97450c0da1b4eb0f9
   languageName: node
   linkType: hard
 
-"@radix-ui/react-presence@npm:1.1.1":
+"@radix-ui/react-primitive@npm:2.0.1":
+  version: 2.0.1
+  resolution: "@radix-ui/react-primitive@npm:2.0.1"
+  dependencies:
+    "@radix-ui/react-slot": "npm:1.1.1"
+  peerDependencies:
+    "@types/react": "*"
+    "@types/react-dom": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-dom":
+      optional: true
+  checksum: 10/ed6829b8ff4117cde2c02b14325ff78b7902fe9e8324b9fdbfd11646c5bb703f38711d8da5029ffc873384496481b7d398d0e3c17f7cc287b52fb92fbaf67da2
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-separator@npm:^1.1.1":
   version: 1.1.1
-  resolution: "@radix-ui/react-presence@npm:1.1.1"
+  resolution: "@radix-ui/react-separator@npm:1.1.1"
   dependencies:
-    "@radix-ui/react-compose-refs": "npm:1.1.0"
-    "@radix-ui/react-use-layout-effect": "npm:1.1.0"
+    "@radix-ui/react-primitive": "npm:2.0.1"
   peerDependencies:
     "@types/react": "*"
     "@types/react-dom": "*"
@@ -1563,60 +1601,22 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 10/1ae074efae47ab52a63239a5936fddb334b2f66ed91e74bfe8b1ae591e5db01fa7e9ddb1412002cc043066d40478ba05187a27eb2684dcd68dea545993f9ee20
+  checksum: 10/85de387e6b94548d777b5ebafe3f170eb0bab31ec1850ee8bc58f7fc48b725d6cf33c4fb2c92be3196ca843a14819fa32108dd78d5675994e31adb5500484e01
   languageName: node
   linkType: hard
 
-"@radix-ui/react-primitive@npm:2.0.0":
-  version: 2.0.0
-  resolution: "@radix-ui/react-primitive@npm:2.0.0"
+"@radix-ui/react-slot@npm:1.1.1, @radix-ui/react-slot@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@radix-ui/react-slot@npm:1.1.1"
   dependencies:
-    "@radix-ui/react-slot": "npm:1.1.0"
-  peerDependencies:
-    "@types/react": "*"
-    "@types/react-dom": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-    "@types/react-dom":
-      optional: true
-  checksum: 10/f3dc683f5ba6534739356ac78ba5008d237b2f0e97eb3d578fcb01ecdb869a0729c24adc6dec238bfb1074763629935724381451313c109ca1be2a60fe4c16e3
-  languageName: node
-  linkType: hard
-
-"@radix-ui/react-separator@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@radix-ui/react-separator@npm:1.1.0"
-  dependencies:
-    "@radix-ui/react-primitive": "npm:2.0.0"
-  peerDependencies:
-    "@types/react": "*"
-    "@types/react-dom": "*"
-    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-    "@types/react-dom":
-      optional: true
-  checksum: 10/a7c3445603a45075dcf3559eb8f2f2e8545afeae253e67d0bde736c66b293c601974a1d6f9d7be1802d83869933dc120a7389ab98189ceb9a24659737dde0162
-  languageName: node
-  linkType: hard
-
-"@radix-ui/react-slot@npm:1.1.0, @radix-ui/react-slot@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@radix-ui/react-slot@npm:1.1.0"
-  dependencies:
-    "@radix-ui/react-compose-refs": "npm:1.1.0"
+    "@radix-ui/react-compose-refs": "npm:1.1.1"
   peerDependencies:
     "@types/react": "*"
     react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 10/95e190868418b1c83adf6627256f6b664b0dcbea95d7215de9c64ac2c31102fc09155565d9ca27be6abd20fc63d0b0bacfe1b67d78b2de1d198244c848e1a54e
+  checksum: 10/5b1ee5100da356c8f9f56cd7ca273838a373fa3808f0f909b1e132c4f734282571cb666e86a548831ee82a62240e126d43379994285a9b030fd34ea43538b5e2
   languageName: node
   linkType: hard
 
@@ -2000,16 +2000,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19.0.1":
-  version: 19.0.1
-  resolution: "@types/react-dom@npm:19.0.1"
-  dependencies:
-    "@types/react": "npm:*"
-  checksum: 10/59d0704e445a3e0d034ef016c92dc1bbec0ba6c1af084bf6de18f0ac3abd18a632961b7fd48668c519137d0bd7bfa77a8135a66c2725d4b7f68b830be263a564
+"@types/react-dom@npm:^19.0.2":
+  version: 19.0.2
+  resolution: "@types/react-dom@npm:19.0.2"
+  peerDependencies:
+    "@types/react": ^19.0.0
+  checksum: 10/d2ae81ec0b8eee7a4bf31918796fdaa34e8db68f69682163bc212d759de76783e6ffcc02c02722dcf508429067148841e6da81414cc730ca2a28c9c2b350c880
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^19.0.1":
+"@types/react@npm:^19.0.1":
   version: 19.0.1
   resolution: "@types/react@npm:19.0.1"
   dependencies:
@@ -2315,13 +2315,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^5.0.3":
-  version: 5.0.3
-  resolution: "astro@npm:5.0.3"
+"astro@npm:^5.0.5":
+  version: 5.0.5
+  resolution: "astro@npm:5.0.5"
   dependencies:
     "@astrojs/compiler": "npm:^2.10.3"
     "@astrojs/internal-helpers": "npm:0.4.2"
-    "@astrojs/markdown-remark": "npm:6.0.0"
+    "@astrojs/markdown-remark": "npm:6.0.1"
     "@astrojs/telemetry": "npm:3.2.0"
     "@oslojs/encoding": "npm:^1.1.0"
     "@rollup/pluginutils": "npm:^5.1.3"
@@ -2383,7 +2383,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/bd70522339d7cd118f67b4793631c94c28af19d8cc744df6b1db4714d2ab60f12e94893964b59f87b64187b2af96236ddb2fee0a2e5d37ed02970ee81dd18abe
+  checksum: 10/96818779fa185c9b03607348670bcc0e841858dc720338a66e4995198319e47f3baecfd4f4d1e2eed77f71198ab1def52926232479dc46ee73f45c7f78cae72c
   languageName: node
   linkType: hard
 
@@ -6132,18 +6132,18 @@ __metadata:
   resolution: "serenmodz.rocks@workspace:."
   dependencies:
     "@astrojs/check": "npm:^0.9.4"
-    "@astrojs/react": "npm:^4.0.0"
+    "@astrojs/react": "npm:^4.1.0"
     "@astrojs/sitemap": "npm:^3.2.1"
     "@astrojs/tailwind": "npm:^5.1.3"
     "@commitlint/cli": "npm:^19.6.0"
     "@commitlint/config-conventional": "npm:^19.6.0"
     "@octokit/rest": "npm:^21.0.2"
-    "@radix-ui/react-dialog": "npm:^1.1.2"
-    "@radix-ui/react-separator": "npm:^1.1.0"
-    "@radix-ui/react-slot": "npm:^1.1.0"
+    "@radix-ui/react-dialog": "npm:^1.1.3"
+    "@radix-ui/react-separator": "npm:^1.1.1"
+    "@radix-ui/react-slot": "npm:^1.1.1"
     "@types/react": "npm:^19.0.1"
-    "@types/react-dom": "npm:^19.0.1"
-    astro: "npm:^5.0.3"
+    "@types/react-dom": "npm:^19.0.2"
+    astro: "npm:^5.0.5"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
     husky: "npm:^9.1.7"
@@ -6155,7 +6155,7 @@ __metadata:
     pretty-quick: "npm:^4.0.0"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
-    simple-icons-astro: "npm:^13.19.0"
+    simple-icons-astro: "npm:^13.20.0"
     tailwind-merge: "npm:^2.5.5"
     tailwindcss: "npm:^3.4.16"
     tailwindcss-animate: "npm:^1.0.7"
@@ -6276,12 +6276,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-icons-astro@npm:^13.19.0":
-  version: 13.19.0
-  resolution: "simple-icons-astro@npm:13.19.0"
+"simple-icons-astro@npm:^13.20.0":
+  version: 13.20.0
+  resolution: "simple-icons-astro@npm:13.20.0"
   peerDependencies:
     astro: ">=2.7.1"
-  checksum: 10/d69c70ed579bfa5a63cdc19970e7c0c1b7f15f82b575eee60782e9851ff0bcb1e5da6ad8fbe632910f4831cdafa279e3ee837a1aebb7b855168fabdc70b61eee
+  checksum: 10/885daf032e61f91da65a9602df6939e4dbd694131338cf50e0fd6727199b2d1fba7c82b850a70bd6a053876b6a3ceaa858b72672dec4b33e03dd9d1093bfd06d
   languageName: node
   linkType: hard
 
