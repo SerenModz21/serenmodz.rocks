@@ -2320,9 +2320,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^5.1.1":
-  version: 5.1.1
-  resolution: "astro@npm:5.1.1"
+"astro@npm:^5.1.2":
+  version: 5.1.2
+  resolution: "astro@npm:5.1.2"
   dependencies:
     "@astrojs/compiler": "npm:^2.10.3"
     "@astrojs/internal-helpers": "npm:0.4.2"
@@ -2389,7 +2389,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/eebac591e9b103343c1dd436eb24df79a7257938f17221b7522abb2d14cf2e29421570bcd6971c1f3908f820eb1d65274843b915d00c4de751224e988d63a56b
+  checksum: 10/04c75ab6824932e7b3f0348111ed1bda1d173c29b9137f7ccea888f0528efbc7a9d81626db5a2d64d014eae36a6383ccb94eb3e69c9975ba793cf73465188f1a
   languageName: node
   linkType: hard
 
@@ -6229,7 +6229,7 @@ __metadata:
     "@radix-ui/react-slot": "npm:^1.1.1"
     "@types/react": "npm:^19.0.2"
     "@types/react-dom": "npm:^19.0.2"
-    astro: "npm:^5.1.1"
+    astro: "npm:^5.1.2"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
     husky: "npm:^9.1.7"
