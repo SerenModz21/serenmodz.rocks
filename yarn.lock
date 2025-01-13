@@ -6213,9 +6213,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serenmodz.rocks@workspace:.":
+"seren.dev@workspace:.":
   version: 0.0.0-use.local
-  resolution: "serenmodz.rocks@workspace:."
+  resolution: "seren.dev@workspace:."
   dependencies:
     "@astrojs/check": "npm:^0.9.4"
     "@astrojs/react": "npm:^4.1.3"
