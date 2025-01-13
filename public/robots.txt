@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://www.serenmodz.rocks/sitemap-index.xml
+Sitemap: https://seren.dev/sitemap-index.xml
