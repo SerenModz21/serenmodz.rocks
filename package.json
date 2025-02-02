@@ -13,20 +13,20 @@
     },
     "dependencies": {
         "@astrojs/check": "^0.9.4",
-        "@astrojs/react": "^4.1.6",
+        "@astrojs/react": "^4.2.0",
         "@astrojs/sitemap": "^3.2.1",
         "@astrojs/tailwind": "^5.1.5",
         "@octokit/rest": "^21.1.0",
         "@radix-ui/react-dialog": "^1.1.5",
         "@radix-ui/react-separator": "^1.1.1",
         "@radix-ui/react-slot": "^1.1.1",
-        "astro": "^5.1.9",
+        "astro": "^5.2.3",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
         "lucide-react": "^0.474.0",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
-        "simple-icons-astro": "^14.4.0",
+        "simple-icons-astro": "^14.5.0",
         "tailwind-merge": "^2.6.0"
     },
     "devDependencies": {
