@@ -1,8 +1,8 @@
 ---
 import { Moon, Sun } from "lucide-react";
-import { Button, type ButtonProps } from "./ui/button";
+import { Button } from "./ui/button";
 
-type Props = Omit<ButtonProps, "id" | "title">;
+type Props = Omit<Parameters<typeof Button>[0], "id" | "title">;
 
 const props = Astro.props;
 ---
