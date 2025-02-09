@@ -152,9 +152,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/tailwind@npm:^5.1.5":
-  version: 5.1.5
-  resolution: "@astrojs/tailwind@npm:5.1.5"
+"@astrojs/tailwind@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@astrojs/tailwind@npm:6.0.0"
   dependencies:
     autoprefixer: "npm:^10.4.20"
     postcss: "npm:^8.5.1"
@@ -162,7 +162,7 @@ __metadata:
   peerDependencies:
     astro: ^3.0.0 || ^4.0.0 || ^5.0.0
     tailwindcss: ^3.0.24
-  checksum: 10/49a6bd4bccfcd2b46b1f4f2c1c2d3a6b7b035d304ad165fdf5a8d8c455cb56a316cd5683e3cf4e758fd08514fb09997ff32624d5c3195fd3930cc612d946813a
+  checksum: 10/db77b92076e7f99c9d303b64cf7751f1e9faa5ac2b118a83901ee8527d481a86644ca3ee4d490a8d072b8aa439c6ad77969df4a25d8b04bc61a1fce3e60f9337
   languageName: node
   linkType: hard
 
@@ -5998,7 +5998,7 @@ __metadata:
     "@astrojs/check": "npm:^0.9.4"
     "@astrojs/react": "npm:^4.2.0"
     "@astrojs/sitemap": "npm:^3.2.1"
-    "@astrojs/tailwind": "npm:^5.1.5"
+    "@astrojs/tailwind": "npm:^6.0.0"
     "@commitlint/cli": "npm:^19.7.1"
     "@commitlint/config-conventional": "npm:^19.7.1"
     "@octokit/rest": "npm:^21.1.0"
