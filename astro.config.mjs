@@ -1,15 +1,14 @@
 import { defineConfig } from "astro/config";
 
-import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
     site: "https://seren.dev",
-    integrations: [
-        react(),
-        tailwind({ applyBaseStyles: false }),
-        sitemap({ lastmod: new Date() }),
-    ],
+    integrations: [react(), sitemap({ lastmod: new Date() })],
+    vite: {
+        plugins: [tailwindcss()],
+    },
 });

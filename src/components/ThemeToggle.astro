@@ -1,8 +1,8 @@
 ---
 import { Moon, Sun } from "lucide-react";
-import { Button, type ButtonProps } from "./ui/button";
+import { Button } from "./ui/button";
 
-type Props = Omit<ButtonProps, "id" | "title">;
+type Props = Omit<Parameters<typeof Button>[0], "id" | "title">;
 
 const props = Astro.props;
 ---
@@ -15,7 +15,20 @@ const props = Astro.props;
 
 <script>
     const button = document.getElementById("theme-toggle");
-    if (button) {
+    updateButton(button);
+
+    // must run the button update again because otherwise, the
+    // button will become useless after navigating to another page
+    document.addEventListener("astro:before-swap", ({ newDocument }) => {
+        const button = newDocument.getElementById("theme-toggle");
+        updateButton(button);
+    });
+
+    function updateButton(button: HTMLElement | null) {
+        if (!button) {
+            return console.warn("Theme Toggle button was not found");
+        }
+
         // Toggle the dark class on button click
         button.addEventListener("click", function () {
             const out = document.documentElement.classList.toggle("dark");
